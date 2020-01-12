@@ -30,6 +30,15 @@
 		B50EDC7323CB108200F9468F /* PaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC7223CB108200F9468F /* PaperCanvasViewGenerator.m */; };
 		B50EDC7623CB10DC00F9468F /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC7523CB10DC00F9468F /* ClothCanvasViewGenerator.m */; };
 		B50EDC7C23CB183E00F9468F /* BrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC7B23CB183E00F9468F /* BrandingFactory.m */; };
+		B50EDC7F23CB1A5100F9468F /* AcmeBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC7E23CB1A5100F9468F /* AcmeBrandingFactory.m */; };
+		B50EDC8223CB1AA800F9468F /* SierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC8123CB1AA800F9468F /* SierraBrandingFactory.m */; };
+		B50EDC8523CB1CB400F9468F /* AcmView.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC8423CB1CB400F9468F /* AcmView.m */; };
+		B50EDC8823CB1CCE00F9468F /* AcmMainButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC8723CB1CCE00F9468F /* AcmMainButton.m */; };
+		B50EDC8B23CB1CED00F9468F /* AcmToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC8A23CB1CED00F9468F /* AcmToolbar.m */; };
+		B50EDC8E23CB1D1A00F9468F /* SierraView.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC8D23CB1D1A00F9468F /* SierraView.m */; };
+		B50EDC9123CB1D2E00F9468F /* SierraMainButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC9023CB1D2E00F9468F /* SierraMainButton.m */; };
+		B50EDC9423CB1D5E00F9468F /* SierraToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC9323CB1D5E00F9468F /* SierraToolbar.m */; };
+		B50EDC9723CB1E6600F9468F /* BrandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC9623CB1E6600F9468F /* BrandingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +106,24 @@
 		B50EDC7823CB15C300F9468F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B50EDC7A23CB183E00F9468F /* BrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrandingFactory.h; sourceTree = "<group>"; };
 		B50EDC7B23CB183E00F9468F /* BrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrandingFactory.m; sourceTree = "<group>"; };
+		B50EDC7D23CB1A5100F9468F /* AcmeBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeBrandingFactory.h; sourceTree = "<group>"; };
+		B50EDC7E23CB1A5100F9468F /* AcmeBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeBrandingFactory.m; sourceTree = "<group>"; };
+		B50EDC8023CB1AA800F9468F /* SierraBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraBrandingFactory.h; sourceTree = "<group>"; };
+		B50EDC8123CB1AA800F9468F /* SierraBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraBrandingFactory.m; sourceTree = "<group>"; };
+		B50EDC8323CB1CB400F9468F /* AcmView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmView.h; sourceTree = "<group>"; };
+		B50EDC8423CB1CB400F9468F /* AcmView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmView.m; sourceTree = "<group>"; };
+		B50EDC8623CB1CCE00F9468F /* AcmMainButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmMainButton.h; sourceTree = "<group>"; };
+		B50EDC8723CB1CCE00F9468F /* AcmMainButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmMainButton.m; sourceTree = "<group>"; };
+		B50EDC8923CB1CED00F9468F /* AcmToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmToolbar.h; sourceTree = "<group>"; };
+		B50EDC8A23CB1CED00F9468F /* AcmToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmToolbar.m; sourceTree = "<group>"; };
+		B50EDC8C23CB1D1A00F9468F /* SierraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraView.h; sourceTree = "<group>"; };
+		B50EDC8D23CB1D1A00F9468F /* SierraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraView.m; sourceTree = "<group>"; };
+		B50EDC8F23CB1D2E00F9468F /* SierraMainButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraMainButton.h; sourceTree = "<group>"; };
+		B50EDC9023CB1D2E00F9468F /* SierraMainButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraMainButton.m; sourceTree = "<group>"; };
+		B50EDC9223CB1D5E00F9468F /* SierraToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraToolbar.h; sourceTree = "<group>"; };
+		B50EDC9323CB1D5E00F9468F /* SierraToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraToolbar.m; sourceTree = "<group>"; };
+		B50EDC9523CB1E6600F9468F /* BrandingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrandingViewController.h; sourceTree = "<group>"; };
+		B50EDC9623CB1E6600F9468F /* BrandingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrandingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +175,7 @@
 		B50EDC0F23C76AC800F9468F /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				B50EDC9823CB202100F9468F /* Builder */,
 				B50EDC4F23C76D5200F9468F /* Prototype */,
 				B50EDC6423CB0DCD00F9468F /* Virtual */,
 				B50EDC7923CB178700F9468F /* AbstractFactory */,
@@ -237,8 +265,33 @@
 			children = (
 				B50EDC7A23CB183E00F9468F /* BrandingFactory.h */,
 				B50EDC7B23CB183E00F9468F /* BrandingFactory.m */,
+				B50EDC7D23CB1A5100F9468F /* AcmeBrandingFactory.h */,
+				B50EDC7E23CB1A5100F9468F /* AcmeBrandingFactory.m */,
+				B50EDC8323CB1CB400F9468F /* AcmView.h */,
+				B50EDC8423CB1CB400F9468F /* AcmView.m */,
+				B50EDC8623CB1CCE00F9468F /* AcmMainButton.h */,
+				B50EDC8723CB1CCE00F9468F /* AcmMainButton.m */,
+				B50EDC8923CB1CED00F9468F /* AcmToolbar.h */,
+				B50EDC8A23CB1CED00F9468F /* AcmToolbar.m */,
+				B50EDC8023CB1AA800F9468F /* SierraBrandingFactory.h */,
+				B50EDC8123CB1AA800F9468F /* SierraBrandingFactory.m */,
+				B50EDC8C23CB1D1A00F9468F /* SierraView.h */,
+				B50EDC8D23CB1D1A00F9468F /* SierraView.m */,
+				B50EDC8F23CB1D2E00F9468F /* SierraMainButton.h */,
+				B50EDC9023CB1D2E00F9468F /* SierraMainButton.m */,
+				B50EDC9223CB1D5E00F9468F /* SierraToolbar.h */,
+				B50EDC9323CB1D5E00F9468F /* SierraToolbar.m */,
+				B50EDC9523CB1E6600F9468F /* BrandingViewController.h */,
+				B50EDC9623CB1E6600F9468F /* BrandingViewController.m */,
 			);
 			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		B50EDC9823CB202100F9468F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,18 +424,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50EDC8E23CB1D1A00F9468F /* SierraView.m in Sources */,
 				B50EDC4523C76B4800F9468F /* CanvasViewController.m in Sources */,
 				B50EDC6123C9E06000F9468F /* Stroke.m in Sources */,
 				B50EDC6723CB0EA100F9468F /* CanvasView.m in Sources */,
 				B50EDC7C23CB183E00F9468F /* BrandingFactory.m in Sources */,
+				B50EDC9723CB1E6600F9468F /* BrandingViewController.m in Sources */,
+				B50EDC8B23CB1CED00F9468F /* AcmToolbar.m in Sources */,
 				B50EDC5B23C76EF800F9468F /* Vertex.m in Sources */,
 				B50EDC1523C76AC800F9468F /* ViewController.m in Sources */,
 				B50EDC5E23C9D24500F9468F /* Dot.m in Sources */,
 				B50EDC2023C76ACB00F9468F /* main.m in Sources */,
 				B50EDC6D23CB0F7400F9468F /* ClothCanvasView.m in Sources */,
+				B50EDC8523CB1CB400F9468F /* AcmView.m in Sources */,
+				B50EDC8223CB1AA800F9468F /* SierraBrandingFactory.m in Sources */,
 				B50EDC4B23C76B7C00F9468F /* ThumbnailViewController.m in Sources */,
+				B50EDC8823CB1CCE00F9468F /* AcmMainButton.m in Sources */,
+				B50EDC9123CB1D2E00F9468F /* SierraMainButton.m in Sources */,
 				B50EDC7623CB10DC00F9468F /* ClothCanvasViewGenerator.m in Sources */,
+				B50EDC9423CB1D5E00F9468F /* SierraToolbar.m in Sources */,
 				B50EDC6A23CB0EC500F9468F /* PaperCanvasView.m in Sources */,
+				B50EDC7F23CB1A5100F9468F /* AcmeBrandingFactory.m in Sources */,
 				B50EDC7023CB0FD000F9468F /* CanvasViewGenerator.m in Sources */,
 				B50EDC7323CB108200F9468F /* PaperCanvasViewGenerator.m in Sources */,
 				B50EDC5223C76D7400F9468F /* Mark.m in Sources */,
