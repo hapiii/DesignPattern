@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class CanvasViewController;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CoordinatingController : UIViewController
+{
+  @private
+  CanvasViewController *canvasViewController_;
+  UIViewController *activeViewController_;
+}
+
+@property (nonatomic, readonly) UIViewController *activeViewController;
+@property (nonatomic, readonly) CanvasViewController *canvasViewController;
+
++ (CoordinatingController *) sharedInstance;
 
 @end
 

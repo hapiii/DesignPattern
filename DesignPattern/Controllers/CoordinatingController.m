@@ -7,6 +7,7 @@
 //
 
 #import "CoordinatingController.h"
+#import "CanvasViewController.h"
 
 @interface CoordinatingController ()
 
@@ -14,19 +15,45 @@
 
 @implementation CoordinatingController
 
+@synthesize activeViewController=activeViewController_;
+@synthesize canvasViewController=canvasViewController_;
+
+static CoordinatingController *sharedCoordinator = nil;
+
+- (void) initialize
+{
+  canvasViewController_ = [[CanvasViewController alloc] init];
+  activeViewController_ = canvasViewController_;
+}
+
++ (CoordinatingController *) sharedInstance
+{
+  if (sharedCoordinator == nil)
+  {
+    sharedCoordinator = [[super allocWithZone:NULL] init];
+    
+    // initialize the first view controller
+    // and keep it with the singleton
+    [sharedCoordinator initialize];
+  }
+  
+  return sharedCoordinator;
+}
+
++ (id) allocWithZone:(NSZone *)zone
+{
+  return [self sharedInstance];
+}
+
+- (id) copyWithZone:(NSZone*)zone
+{
+  return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UIToolbar *toolBar = [[UIToolbar alloc] init];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
