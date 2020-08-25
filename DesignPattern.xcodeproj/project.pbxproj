@@ -19,7 +19,6 @@
 		B50EDC4823C76B6100F9468F /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC4723C76B6100F9468F /* PaletteViewController.m */; };
 		B50EDC4B23C76B7C00F9468F /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC4A23C76B7C00F9468F /* ThumbnailViewController.m */; };
 		B50EDC4E23C76C3500F9468F /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC4D23C76C3500F9468F /* CoordinatingController.m */; };
-		B50EDC5223C76D7400F9468F /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC5123C76D7400F9468F /* Mark.m */; };
 		B50EDC5B23C76EF800F9468F /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC5A23C76EF800F9468F /* Vertex.m */; };
 		B50EDC5E23C9D24500F9468F /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC5D23C9D24500F9468F /* Dot.m */; };
 		B50EDC6123C9E06000F9468F /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EDC6023C9E06000F9468F /* Stroke.m */; };
@@ -47,8 +46,22 @@
 		B5DFED9824A5A0B900986393 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DFED9724A5A0B900986393 /* Singleton.m */; };
 		B5DFED9C24A5B3CD00986393 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DFED9B24A5B3CD00986393 /* Command.m */; };
 		B5DFED9F24A5B42500986393 /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DFED9E24A5B42500986393 /* SetStrokeColorCommand.m */; };
-		B5DFEDA224A5B92E00986393 /* CommandButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DFEDA124A5B92E00986393 /* CommandButton.m */; };
-		B5DFEDA524A5B94700986393 /* CommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DFEDA424A5B94700986393 /* CommandSlider.m */; };
+		BF496E2324F4AB2400B85E6D /* SaveScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E2224F4AB2400B85E6D /* SaveScribbleCommand.m */; };
+		BF496E2724F4B1E600B85E6D /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E2624F4B1E600B85E6D /* ScribbleManager.m */; };
+		BF496E2A24F4B20B00B85E6D /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E2924F4B20B00B85E6D /* Scribble.m */; };
+		BF496E2D24F4B22200B85E6D /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E2C24F4B22200B85E6D /* ScribbleMemento.m */; };
+		BF496E3524F4B67800B85E6D /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E3424F4B67800B85E6D /* ScribbleThumbnailView.m */; };
+		BF496E3B24F4B6D100B85E6D /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E3A24F4B6D100B85E6D /* ScribbleThumbnailViewImageProxy.m */; };
+		BF496E3E24F4B9CD00B85E6D /* DeleteScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E3D24F4B9CD00B85E6D /* DeleteScribbleCommand.m */; };
+		BF496E4124F4BA8400B85E6D /* OpenScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E4024F4BA8400B85E6D /* OpenScribbleCommand.m */; };
+		BF496E4424F4BB8700B85E6D /* SetStrokeSizeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E4324F4BB8700B85E6D /* SetStrokeSizeCommand.m */; };
+		BF496E4A24F4E1F600B85E6D /* CommandBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E4924F4E1F600B85E6D /* CommandBarButton.m */; };
+		BF496E4E24F4E25400B85E6D /* CommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E4D24F4E25400B85E6D /* CommandSlider.m */; };
+		BF496E5224F4E2A600B85E6D /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E5124F4E2A600B85E6D /* NSMutableArray+Stack.m */; };
+		BF496E5624F4E33B00B85E6D /* UIView+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E5524F4E33B00B85E6D /* UIView+UIImage.m */; };
+		BF496E5C24F4E94C00B85E6D /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E5B24F4E94C00B85E6D /* MarkEnumerator.m */; };
+		BF496E6324F4EB2D00B85E6D /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E6224F4EB2D00B85E6D /* MarkRenderer.m */; };
+		BF496E6924F5011B00B85E6D /* ScribbleThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E6824F5011B00B85E6D /* ScribbleThumbnailCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +107,6 @@
 		B50EDC4C23C76C3500F9468F /* CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
 		B50EDC4D23C76C3500F9468F /* CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
 		B50EDC5023C76D7400F9468F /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
-		B50EDC5123C76D7400F9468F /* Mark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mark.m; sourceTree = "<group>"; };
 		B50EDC5923C76EF800F9468F /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		B50EDC5A23C76EF800F9468F /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 		B50EDC5C23C9D24500F9468F /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
@@ -150,10 +162,42 @@
 		B5DFED9B24A5B3CD00986393 /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		B5DFED9D24A5B42500986393 /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
 		B5DFED9E24A5B42500986393 /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
-		B5DFEDA024A5B92E00986393 /* CommandButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandButton.h; sourceTree = "<group>"; };
-		B5DFEDA124A5B92E00986393 /* CommandButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandButton.m; sourceTree = "<group>"; };
-		B5DFEDA324A5B94700986393 /* CommandSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandSlider.h; sourceTree = "<group>"; };
-		B5DFEDA424A5B94700986393 /* CommandSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandSlider.m; sourceTree = "<group>"; };
+		BF496E2124F4AB2400B85E6D /* SaveScribbleCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveScribbleCommand.h; sourceTree = "<group>"; };
+		BF496E2224F4AB2400B85E6D /* SaveScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveScribbleCommand.m; sourceTree = "<group>"; };
+		BF496E2524F4B1E600B85E6D /* ScribbleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleManager.h; sourceTree = "<group>"; };
+		BF496E2624F4B1E600B85E6D /* ScribbleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleManager.m; sourceTree = "<group>"; };
+		BF496E2824F4B20B00B85E6D /* Scribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scribble.h; sourceTree = "<group>"; };
+		BF496E2924F4B20B00B85E6D /* Scribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
+		BF496E2B24F4B22200B85E6D /* ScribbleMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento.h; sourceTree = "<group>"; };
+		BF496E2C24F4B22200B85E6D /* ScribbleMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleMemento.m; sourceTree = "<group>"; };
+		BF496E3124F4B34700B85E6D /* ScribbleMemento+Friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScribbleMemento+Friend.h"; sourceTree = "<group>"; };
+		BF496E3324F4B67800B85E6D /* ScribbleThumbnailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailView.h; sourceTree = "<group>"; };
+		BF496E3424F4B67800B85E6D /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailView.m; sourceTree = "<group>"; };
+		BF496E3624F4B69700B85E6D /* ScribbleSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleSource.h; sourceTree = "<group>"; };
+		BF496E3924F4B6D100B85E6D /* ScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
+		BF496E3A24F4B6D100B85E6D /* ScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
+		BF496E3C24F4B9CD00B85E6D /* DeleteScribbleCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteScribbleCommand.h; sourceTree = "<group>"; };
+		BF496E3D24F4B9CD00B85E6D /* DeleteScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteScribbleCommand.m; sourceTree = "<group>"; };
+		BF496E3F24F4BA8400B85E6D /* OpenScribbleCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenScribbleCommand.h; sourceTree = "<group>"; };
+		BF496E4024F4BA8400B85E6D /* OpenScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenScribbleCommand.m; sourceTree = "<group>"; };
+		BF496E4224F4BB8700B85E6D /* SetStrokeSizeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeSizeCommand.h; sourceTree = "<group>"; };
+		BF496E4324F4BB8700B85E6D /* SetStrokeSizeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetStrokeSizeCommand.m; sourceTree = "<group>"; };
+		BF496E4824F4E1F600B85E6D /* CommandBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandBarButton.h; sourceTree = "<group>"; };
+		BF496E4924F4E1F600B85E6D /* CommandBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandBarButton.m; sourceTree = "<group>"; };
+		BF496E4C24F4E25400B85E6D /* CommandSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandSlider.h; sourceTree = "<group>"; };
+		BF496E4D24F4E25400B85E6D /* CommandSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandSlider.m; sourceTree = "<group>"; };
+		BF496E5024F4E2A600B85E6D /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		BF496E5124F4E2A600B85E6D /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		BF496E5424F4E33B00B85E6D /* UIView+UIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UIImage.h"; sourceTree = "<group>"; };
+		BF496E5524F4E33B00B85E6D /* UIView+UIImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIImage.m"; sourceTree = "<group>"; };
+		BF496E5A24F4E94C00B85E6D /* MarkEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator.h; sourceTree = "<group>"; };
+		BF496E5B24F4E94C00B85E6D /* MarkEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkEnumerator.m; sourceTree = "<group>"; };
+		BF496E5D24F4E98400B85E6D /* MarkEnumerator+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarkEnumerator+Internal.h"; sourceTree = "<group>"; };
+		BF496E6124F4EB2D00B85E6D /* MarkRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkRenderer.h; sourceTree = "<group>"; };
+		BF496E6224F4EB2D00B85E6D /* MarkRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkRenderer.m; sourceTree = "<group>"; };
+		BF496E6424F4EB6600B85E6D /* MarkVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkVisitor.h; sourceTree = "<group>"; };
+		BF496E6724F5011B00B85E6D /* ScribbleThumbnailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailCell.h; sourceTree = "<group>"; };
+		BF496E6824F5011B00B85E6D /* ScribbleThumbnailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,13 +249,10 @@
 		B50EDC0F23C76AC800F9468F /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
-				B5DFED9924A5B3B700986393 /* Adapter */,
+				BF496E4524F4BCBC00B85E6D /* TouchPainter */,
 				B5DFED9524A5A09B00986393 /* Singleton */,
-				B50EDC4F23C76D5200F9468F /* Prototype */,
-				B50EDC6423CB0DCD00F9468F /* Virtual */,
 				B50EDC7923CB178700F9468F /* AbstractFactory */,
 				B5DFED8524A474C700986393 /* Builder */,
-				B50EDC4223C76B0F00F9468F /* Controllers */,
 				B50EDC1023C76AC800F9468F /* AppDelegate.h */,
 				B50EDC1123C76AC800F9468F /* AppDelegate.m */,
 				B50EDC1323C76AC800F9468F /* ViewController.h */,
@@ -252,8 +293,8 @@
 				B50EDC4723C76B6100F9468F /* PaletteViewController.m */,
 				B50EDC4923C76B7C00F9468F /* ThumbnailViewController.h */,
 				B50EDC4A23C76B7C00F9468F /* ThumbnailViewController.m */,
-				B50EDC4C23C76C3500F9468F /* CoordinatingController.h */,
-				B50EDC4D23C76C3500F9468F /* CoordinatingController.m */,
+				BF496E6724F5011B00B85E6D /* ScribbleThumbnailCell.h */,
+				BF496E6824F5011B00B85E6D /* ScribbleThumbnailCell.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -262,7 +303,6 @@
 			isa = PBXGroup;
 			children = (
 				B50EDC5023C76D7400F9468F /* Mark.h */,
-				B50EDC5123C76D7400F9468F /* Mark.m */,
 				B50EDC5923C76EF800F9468F /* Vertex.h */,
 				B50EDC5A23C76EF800F9468F /* Vertex.m */,
 				B50EDC5C23C9D24500F9468F /* Dot.h */,
@@ -273,7 +313,7 @@
 			path = Prototype;
 			sourceTree = "<group>";
 		};
-		B50EDC6423CB0DCD00F9468F /* Virtual */ = {
+		B50EDC6423CB0DCD00F9468F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				B50EDC6523CB0EA100F9468F /* CanvasView.h */,
@@ -282,14 +322,8 @@
 				B50EDC6923CB0EC500F9468F /* PaperCanvasView.m */,
 				B50EDC6B23CB0F7400F9468F /* ClothCanvasView.h */,
 				B50EDC6C23CB0F7400F9468F /* ClothCanvasView.m */,
-				B50EDC6E23CB0FD000F9468F /* CanvasViewGenerator.h */,
-				B50EDC6F23CB0FD000F9468F /* CanvasViewGenerator.m */,
-				B50EDC7123CB108200F9468F /* PaperCanvasViewGenerator.h */,
-				B50EDC7223CB108200F9468F /* PaperCanvasViewGenerator.m */,
-				B50EDC7423CB10DC00F9468F /* ClothCanvasViewGenerator.h */,
-				B50EDC7523CB10DC00F9468F /* ClothCanvasViewGenerator.m */,
 			);
-			path = Virtual;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B50EDC7923CB178700F9468F /* AbstractFactory */ = {
@@ -345,19 +379,156 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
-		B5DFED9924A5B3B700986393 /* Adapter */ = {
+		B5DFED9924A5B3B700986393 /* Command */ = {
 			isa = PBXGroup;
 			children = (
 				B5DFED9A24A5B3CD00986393 /* Command.h */,
 				B5DFED9B24A5B3CD00986393 /* Command.m */,
-				B5DFEDA024A5B92E00986393 /* CommandButton.h */,
-				B5DFEDA124A5B92E00986393 /* CommandButton.m */,
-				B5DFEDA324A5B94700986393 /* CommandSlider.h */,
-				B5DFEDA424A5B94700986393 /* CommandSlider.m */,
 				B5DFED9D24A5B42500986393 /* SetStrokeColorCommand.h */,
 				B5DFED9E24A5B42500986393 /* SetStrokeColorCommand.m */,
+				BF496E4224F4BB8700B85E6D /* SetStrokeSizeCommand.h */,
+				BF496E4324F4BB8700B85E6D /* SetStrokeSizeCommand.m */,
+				BF496E2124F4AB2400B85E6D /* SaveScribbleCommand.h */,
+				BF496E2224F4AB2400B85E6D /* SaveScribbleCommand.m */,
+				BF496E3C24F4B9CD00B85E6D /* DeleteScribbleCommand.h */,
+				BF496E3D24F4B9CD00B85E6D /* DeleteScribbleCommand.m */,
+				BF496E3F24F4BA8400B85E6D /* OpenScribbleCommand.h */,
+				BF496E4024F4BA8400B85E6D /* OpenScribbleCommand.m */,
 			);
-			path = Adapter;
+			path = Command;
+			sourceTree = "<group>";
+		};
+		BF496E2424F4AB7400B85E6D /* MementoCommand */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E2524F4B1E600B85E6D /* ScribbleManager.h */,
+				BF496E2624F4B1E600B85E6D /* ScribbleManager.m */,
+				BF496E2824F4B20B00B85E6D /* Scribble.h */,
+				BF496E2924F4B20B00B85E6D /* Scribble.m */,
+				BF496E2B24F4B22200B85E6D /* ScribbleMemento.h */,
+				BF496E2C24F4B22200B85E6D /* ScribbleMemento.m */,
+				BF496E3124F4B34700B85E6D /* ScribbleMemento+Friend.h */,
+			);
+			path = MementoCommand;
+			sourceTree = "<group>";
+		};
+		BF496E3224F4B48A00B85E6D /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E3324F4B67800B85E6D /* ScribbleThumbnailView.h */,
+				BF496E3424F4B67800B85E6D /* ScribbleThumbnailView.m */,
+				BF496E3924F4B6D100B85E6D /* ScribbleThumbnailViewImageProxy.h */,
+				BF496E3A24F4B6D100B85E6D /* ScribbleThumbnailViewImageProxy.m */,
+				BF496E3624F4B69700B85E6D /* ScribbleSource.h */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		BF496E4524F4BCBC00B85E6D /* TouchPainter */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E6024F4EB1300B85E6D /* Vistor */,
+				BF496E5924F4E8D500B85E6D /* Iteratoer */,
+				BF496E5824F4E81800B85E6D /* Factory Method */,
+				BF496E5724F4E58600B85E6D /* Mediator */,
+				BF496E4624F4C03600B85E6D /* Utilities */,
+				B50EDC4F23C76D5200F9468F /* Prototype */,
+				B50EDC6423CB0DCD00F9468F /* Views */,
+				B50EDC4223C76B0F00F9468F /* Controllers */,
+				B5DFED9924A5B3B700986393 /* Command */,
+				BF496E2424F4AB7400B85E6D /* MementoCommand */,
+				BF496E3224F4B48A00B85E6D /* Proxy */,
+			);
+			path = TouchPainter;
+			sourceTree = "<group>";
+		};
+		BF496E4624F4C03600B85E6D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E5324F4E31300B85E6D /* View2Image */,
+				BF496E4F24F4E28B00B85E6D /* Custom Stack */,
+				BF496E4B24F4E23200B85E6D /* Command Slider */,
+				BF496E4724F4E1D600B85E6D /* Command Button */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BF496E4724F4E1D600B85E6D /* Command Button */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E4824F4E1F600B85E6D /* CommandBarButton.h */,
+				BF496E4924F4E1F600B85E6D /* CommandBarButton.m */,
+			);
+			path = "Command Button";
+			sourceTree = "<group>";
+		};
+		BF496E4B24F4E23200B85E6D /* Command Slider */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E4C24F4E25400B85E6D /* CommandSlider.h */,
+				BF496E4D24F4E25400B85E6D /* CommandSlider.m */,
+			);
+			path = "Command Slider";
+			sourceTree = "<group>";
+		};
+		BF496E4F24F4E28B00B85E6D /* Custom Stack */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E5024F4E2A600B85E6D /* NSMutableArray+Stack.h */,
+				BF496E5124F4E2A600B85E6D /* NSMutableArray+Stack.m */,
+			);
+			path = "Custom Stack";
+			sourceTree = "<group>";
+		};
+		BF496E5324F4E31300B85E6D /* View2Image */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E5424F4E33B00B85E6D /* UIView+UIImage.h */,
+				BF496E5524F4E33B00B85E6D /* UIView+UIImage.m */,
+			);
+			path = View2Image;
+			sourceTree = "<group>";
+		};
+		BF496E5724F4E58600B85E6D /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				B50EDC4C23C76C3500F9468F /* CoordinatingController.h */,
+				B50EDC4D23C76C3500F9468F /* CoordinatingController.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		BF496E5824F4E81800B85E6D /* Factory Method */ = {
+			isa = PBXGroup;
+			children = (
+				B50EDC6E23CB0FD000F9468F /* CanvasViewGenerator.h */,
+				B50EDC6F23CB0FD000F9468F /* CanvasViewGenerator.m */,
+				B50EDC7123CB108200F9468F /* PaperCanvasViewGenerator.h */,
+				B50EDC7223CB108200F9468F /* PaperCanvasViewGenerator.m */,
+				B50EDC7423CB10DC00F9468F /* ClothCanvasViewGenerator.h */,
+				B50EDC7523CB10DC00F9468F /* ClothCanvasViewGenerator.m */,
+			);
+			path = "Factory Method";
+			sourceTree = "<group>";
+		};
+		BF496E5924F4E8D500B85E6D /* Iteratoer */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E5A24F4E94C00B85E6D /* MarkEnumerator.h */,
+				BF496E5B24F4E94C00B85E6D /* MarkEnumerator.m */,
+				BF496E5D24F4E98400B85E6D /* MarkEnumerator+Internal.h */,
+			);
+			path = Iteratoer;
+			sourceTree = "<group>";
+		};
+		BF496E6024F4EB1300B85E6D /* Vistor */ = {
+			isa = PBXGroup;
+			children = (
+				BF496E6124F4EB2D00B85E6D /* MarkRenderer.h */,
+				BF496E6224F4EB2D00B85E6D /* MarkRenderer.m */,
+				BF496E6424F4EB6600B85E6D /* MarkVisitor.h */,
+			);
+			path = Vistor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,40 +661,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF496E2D24F4B22200B85E6D /* ScribbleMemento.m in Sources */,
 				B5DFED9424A599E300986393 /* GameClient.m in Sources */,
 				B50EDC8E23CB1D1A00F9468F /* SierraView.m in Sources */,
 				B50EDC4523C76B4800F9468F /* CanvasViewController.m in Sources */,
 				B50EDC6123C9E06000F9468F /* Stroke.m in Sources */,
 				B50EDC6723CB0EA100F9468F /* CanvasView.m in Sources */,
+				BF496E4124F4BA8400B85E6D /* OpenScribbleCommand.m in Sources */,
+				BF496E5224F4E2A600B85E6D /* NSMutableArray+Stack.m in Sources */,
 				B5DFED9124A596CF00986393 /* ChasingGame.m in Sources */,
 				B50EDC7C23CB183E00F9468F /* BrandingFactory.m in Sources */,
 				B50EDC9723CB1E6600F9468F /* BrandingViewController.m in Sources */,
+				BF496E2724F4B1E600B85E6D /* ScribbleManager.m in Sources */,
+				BF496E3B24F4B6D100B85E6D /* ScribbleThumbnailViewImageProxy.m in Sources */,
 				B50EDC8B23CB1CED00F9468F /* AcmToolbar.m in Sources */,
+				BF496E4424F4BB8700B85E6D /* SetStrokeSizeCommand.m in Sources */,
+				BF496E5C24F4E94C00B85E6D /* MarkEnumerator.m in Sources */,
 				B50EDC5B23C76EF800F9468F /* Vertex.m in Sources */,
 				B50EDC1523C76AC800F9468F /* ViewController.m in Sources */,
+				BF496E6924F5011B00B85E6D /* ScribbleThumbnailCell.m in Sources */,
 				B5DFED9C24A5B3CD00986393 /* Command.m in Sources */,
 				B50EDC5E23C9D24500F9468F /* Dot.m in Sources */,
 				B5DFED8E24A5955600986393 /* StandardCharacterBuilder.m in Sources */,
 				B50EDC2023C76ACB00F9468F /* main.m in Sources */,
 				B50EDC6D23CB0F7400F9468F /* ClothCanvasView.m in Sources */,
+				BF496E4A24F4E1F600B85E6D /* CommandBarButton.m in Sources */,
+				BF496E2324F4AB2400B85E6D /* SaveScribbleCommand.m in Sources */,
 				B50EDC8523CB1CB400F9468F /* AcmView.m in Sources */,
-				B5DFEDA224A5B92E00986393 /* CommandButton.m in Sources */,
 				B50EDC8223CB1AA800F9468F /* SierraBrandingFactory.m in Sources */,
 				B50EDC4B23C76B7C00F9468F /* ThumbnailViewController.m in Sources */,
 				B5DFED8824A4986600986393 /* Character.m in Sources */,
 				B50EDC8823CB1CCE00F9468F /* AcmMainButton.m in Sources */,
 				B50EDC9123CB1D2E00F9468F /* SierraMainButton.m in Sources */,
-				B5DFEDA524A5B94700986393 /* CommandSlider.m in Sources */,
 				B50EDC7623CB10DC00F9468F /* ClothCanvasViewGenerator.m in Sources */,
 				B50EDC9423CB1D5E00F9468F /* SierraToolbar.m in Sources */,
+				BF496E3E24F4B9CD00B85E6D /* DeleteScribbleCommand.m in Sources */,
 				B50EDC6A23CB0EC500F9468F /* PaperCanvasView.m in Sources */,
 				B50EDC7F23CB1A5100F9468F /* AcmeBrandingFactory.m in Sources */,
 				B5DFED8B24A49B9F00986393 /* CharacterBuilder.m in Sources */,
 				B50EDC7023CB0FD000F9468F /* CanvasViewGenerator.m in Sources */,
+				BF496E3524F4B67800B85E6D /* ScribbleThumbnailView.m in Sources */,
 				B50EDC7323CB108200F9468F /* PaperCanvasViewGenerator.m in Sources */,
 				B5DFED9F24A5B42500986393 /* SetStrokeColorCommand.m in Sources */,
-				B50EDC5223C76D7400F9468F /* Mark.m in Sources */,
+				BF496E2A24F4B20B00B85E6D /* Scribble.m in Sources */,
+				BF496E5624F4E33B00B85E6D /* UIView+UIImage.m in Sources */,
 				B50EDC4E23C76C3500F9468F /* CoordinatingController.m in Sources */,
+				BF496E6324F4EB2D00B85E6D /* MarkRenderer.m in Sources */,
+				BF496E4E24F4E25400B85E6D /* CommandSlider.m in Sources */,
 				B5DFED9824A5A0B900986393 /* Singleton.m in Sources */,
 				B50EDC1223C76AC800F9468F /* AppDelegate.m in Sources */,
 				B50EDC4823C76B6100F9468F /* PaletteViewController.m in Sources */,
