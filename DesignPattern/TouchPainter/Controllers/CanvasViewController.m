@@ -29,7 +29,6 @@
 {
   if (scribble_ != aScribble)
   {
-   
     scribble_ = aScribble;
     
     // add itself to the scribble as

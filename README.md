@@ -1,5 +1,6 @@
 #  
-
+###  paint效果
+![image](https://github.com/hapiii/DesignPattern/blob/master/imgs/add.gif)
 ###  3.原型模式 - Prototype
 相当于模型
 - 需要创建的对象 对立其他类型创建，类在运行时决定

@@ -11,8 +11,7 @@
 @implementation Dot
 @synthesize size=size_, color=color_;
 
-- (void) acceptMarkVisitor:(id <MarkVisitor>)visitor
-{
+- (void) acceptMarkVisitor:(id <MarkVisitor>)visitor {
   [visitor visitDot:self];
 }
 

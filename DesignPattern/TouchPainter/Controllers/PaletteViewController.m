@@ -38,7 +38,6 @@
     [self configUI];
     
     SetStrokeColorCommand *colorCommand = (SetStrokeColorCommand *)[self.redSlider command];
-
     __weak typeof (self) wself = self;
     [colorCommand setRGBValuesProvider: ^(CGFloat *red, CGFloat *green, CGFloat *blue)
      {

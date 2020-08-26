@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UINavigationItem *navItem;
 @property (nonatomic, strong) UITableView *tableView;
+
 @end
 
 @implementation ThumbnailViewController
@@ -20,6 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     CGRect statusRect = [[UIApplication sharedApplication] statusBarFrame];
     CGFloat navHeight = statusRect.size.height + 44;
    
@@ -40,7 +42,7 @@
     
     UIColor *backgroundColor = [UIColor colorWithPatternImage:
                                 [UIImage imageNamed:@"background_texture"]];
-    [[self view] setBackgroundColor:backgroundColor];
+    [self.tableView setBackgroundColor:backgroundColor];
     
     // initialize the scribble manager
     scribbleManager_ = [[ScribbleManager alloc] init];
