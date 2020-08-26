@@ -12,16 +12,11 @@
 
 @implementation DeleteScribbleCommand
 
-- (void) execute
-{
-  // get a hold of the current
-  // CanvasViewController from
-  // the CoordinatingController
+- (void) execute {
+
   CoordinatingController *coordinatingController = [CoordinatingController sharedInstance];
   CanvasViewController *canvasViewController = [coordinatingController canvasViewController];
   
-  // create a new scribble for
-  // canvasViewController
   Scribble *newScribble = [[Scribble alloc] init];
   [canvasViewController setScribble:newScribble];
 }

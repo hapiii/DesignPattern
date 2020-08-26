@@ -24,8 +24,7 @@
   return self;
 }
 
-- (void) execute
-{
+- (void) execute {
   // get a scribble from the scribbleSource_
   Scribble *scribble = [scribbleSource_ scribble];
   

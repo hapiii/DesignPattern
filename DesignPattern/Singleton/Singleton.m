@@ -14,7 +14,7 @@ static Singleton *sharedSingleton_ = nil;
 
 - (void) operation {
     
-    NSLog(@"Singleton");
+
 }
 
 + (Singleton *) sharedInstance {

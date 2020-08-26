@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Character : NSObject{
+@interface Character : NSObject {
     @private
     float protection_;
     float power_;
@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
     float agility_;
     float aggressiveness_;
 }
+
 ///防御
 @property (nonatomic, assign) float protenction;
 ///攻击

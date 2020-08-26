@@ -7,8 +7,11 @@
 //
 
 #import "ThumbnailViewController.h"
+#import "CoordinatingController.h"
 
 @interface ThumbnailViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong) UINavigationItem *navItem;
 @property (nonatomic, strong) UITableView *tableView;
 @end
 
@@ -17,8 +20,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    CGRect statusRect = [[UIApplication sharedApplication] statusBarFrame];
+    CGFloat navHeight = statusRect.size.height + 44;
+   
+    UINavigationBar *navigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, statusRect.size.height, self.view.frame.size.width, statusRect.size.height+44)];
+    navigationBar.backgroundColor = [UIColor whiteColor];
+    self.navItem = [[UINavigationItem alloc] initWithTitle:@"缩略图"];
+    UIButton *close = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [close addTarget:[CoordinatingController sharedInstance] action:@selector(requestViewChangeByObject:)  forControlEvents:UIControlEventTouchUpInside];
+    [close setImage:[UIImage imageNamed:@"close_view"] forState:UIControlStateNormal];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:close];
+    self.navItem.rightBarButtonItem = rightItem;
+     [self.view addSubview:navigationBar];
+     [navigationBar setItems:@[self.navItem]];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, navHeight, self.view.frame.size.width, self.view.frame.size.height - navHeight) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
@@ -32,19 +47,13 @@
     
     // show number of scribbles available
     NSInteger numberOfScribbles = [scribbleManager_ numberOfScribbles];
-    [navItem_ setTitle:[NSString stringWithFormat:
+    [self.navItem setTitle:[NSString stringWithFormat:
                         numberOfScribbles > 1 ? @"%ld items" : @"%ld item",
                         (long)numberOfScribbles]];
+    
 }
 
 
-- (void)didReceiveMemoryWarning
-{
-  // Releases the view if it doesn't have a superview.
-  [super didReceiveMemoryWarning];
-  
-  // Release any cached data, images, etc that aren't in use.
-}
 
 
 #pragma mark -

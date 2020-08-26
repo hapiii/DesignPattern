@@ -16,15 +16,12 @@
 
 @implementation CoordinatingController
 
-@synthesize activeViewController = activeViewController_;
-@synthesize canvasViewController = canvasViewController_;
-
 static CoordinatingController *sharedCoordinator = nil;
 
 - (void) initialize
 {
-    canvasViewController_ = [[CanvasViewController alloc] init];
-    activeViewController_ = canvasViewController_;
+    _canvasViewController = [[CanvasViewController alloc] init];
+    _activeViewController = _canvasViewController;
 }
 
 + (CoordinatingController *) sharedInstance
@@ -50,66 +47,53 @@ static CoordinatingController *sharedCoordinator = nil;
 
 - (void)requestViewChangeByObject:(id)object
 {
-    
-    if ([object isKindOfClass:[UIBarButtonItem class]])
+  
+  if ([object isKindOfClass:[UIBarButtonItem class]])
+  {
+      NSInteger index = [(UIBarButtonItem *)object tag];
+    switch (index)
     {
-        switch ([(UIBarButtonItem *)object tag])
-        {
-            case kButtonTagOpenPaletteView:
-            {
-                // load a PaletteViewController
-                PaletteViewController *controller = [[PaletteViewController alloc] init];
-                
-                [canvasViewController_ presentViewController:controller animated:YES completion:nil];
-                
-                // set the activeViewController to
-                // paletteViewController
-                activeViewController_ = controller;
-            }
-                break;
-            case kButtonTagOpenThumbnailView:
-            {
-                // load a ThumbnailViewController
-                ThumbnailViewController *controller = [[ThumbnailViewController alloc] init];
-                
-                
-                // transition to the ThumbnailViewController
-                [canvasViewController_ presentViewController:controller animated:YES completion:nil];
-                
-                // set the activeViewController to
-                // ThumbnailViewController
-                activeViewController_ = controller;
-            }
-                break;
-            default:
-                // just go back to the main canvasViewController
-                // for the other types
-            {
-                // The Done command is shared on every
-                // view controller except the CanvasViewController
-                // When the Done button is hit, it should
-                // take the user back to the first page in
-                // conjunction with the design
-                // other objects will follow the same path
-                [canvasViewController_ dismissViewControllerAnimated:YES completion:nil];
-                
-                // set the activeViewController back to
-                // canvasViewController
-                activeViewController_ = canvasViewController_;
-            }
-                break;
-        }
-    }
-    // every thing else goes to the main canvasViewController
-    else
-    {
-        [canvasViewController_ dismissViewControllerAnimated:YES completion:nil];
+      case kButtonTagOpenPaletteView:
+      {
+        PaletteViewController *controller = [[PaletteViewController alloc] init];
+        controller.modalPresentationStyle = UIModalPresentationFullScreen;
+        [_canvasViewController presentViewController:controller animated:YES completion:nil];
+        _activeViewController = controller;
+      }
+        break;
+      case kButtonTagOpenThumbnailView:
+      {
+       
+        ThumbnailViewController *controller = [[ThumbnailViewController alloc] init];
+        controller.modalPresentationStyle = UIModalPresentationFullScreen;
+        [_canvasViewController presentViewController:controller
+                                                 animated:YES completion:nil];
+        _activeViewController = controller;
+      }
+        break;
+      default:
+      {
+        // The Done command is shared on every
+        // view controller except the CanvasViewController
+        // When the Done button is hit, it should
+        // take the user back to the first page in
+        // conjunction with the design
+        // other objects will follow the same path
+        [_canvasViewController dismissViewControllerAnimated:YES completion:nil];
         
         // set the activeViewController back to
         // canvasViewController
-        activeViewController_ = canvasViewController_;
+        _activeViewController = _canvasViewController;
+      }
+        break;
     }
-    
+  }
+  else
+  {
+    [_canvasViewController dismissViewControllerAnimated:YES completion:nil];
+    _activeViewController = _canvasViewController;
+  }
+  
 }
 
 

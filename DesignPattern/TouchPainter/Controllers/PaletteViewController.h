@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PaletteViewController : UIViewController
+@interface PaletteViewController : UIViewController<SetStrokeColorCommandDelegate,SetStrokeSizeCommandDelegate>
 
 - (void)onCommandSliderValueChanged:(CommandSlider *)slider;
 

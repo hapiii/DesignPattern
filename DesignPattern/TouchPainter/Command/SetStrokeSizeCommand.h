@@ -11,6 +11,8 @@
 
 @class SetStrokeSizeCommand;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol SetStrokeSizeCommandDelegate
 
 - (void) command:(SetStrokeSizeCommand *)command
@@ -19,7 +21,7 @@
 @end
 
 
-NS_ASSUME_NONNULL_BEGIN
+
 
 @interface SetStrokeSizeCommand : Command
 

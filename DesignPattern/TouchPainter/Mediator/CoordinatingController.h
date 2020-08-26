@@ -11,20 +11,18 @@
 #import "PaletteViewController.h"
 #import "ThumbnailViewController.h"
 
-typedef enum{
-  kButtonTagDone,
-  kButtonTagOpenPaletteView,
-  kButtonTagOpenThumbnailView
-} ButtonTag;
+typedef NS_ENUM(NSInteger , ButtonTag){
+    ///退出
+  kButtonTagDone = 0,
+    ///打开设置
+  kButtonTagOpenPaletteView = 1,
+///打开缩略图
+  kButtonTagOpenThumbnailView = 2,
+};
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CoordinatingController : UIViewController
-{
-  @private
-  CanvasViewController *canvasViewController_;
-  UIViewController *activeViewController_;
-}
 
 @property (nonatomic, readonly) UIViewController *activeViewController;
 @property (nonatomic, readonly) CanvasViewController *canvasViewController;

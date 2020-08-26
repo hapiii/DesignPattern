@@ -12,14 +12,14 @@
 
 @implementation SetStrokeSizeCommand
 
-@synthesize delegate=delegate_;
+
 
 - (void) execute
 {
   // get the current stroke size
   // from whatever it's my delegate
   CGFloat strokeSize = 1;
-  [delegate_ command:self didRequestForStrokeSize:&strokeSize];
+  [_delegate command:self didRequestForStrokeSize:&strokeSize];
   
   // get a hold of the current
   // canvasViewController from

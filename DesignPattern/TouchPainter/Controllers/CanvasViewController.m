@@ -60,7 +60,7 @@
   Scribble *scribble = [[Scribble alloc] init];
   [self setScribble:scribble];
   
-  // setup default stroke color and size
+  ///颜色线条配置
   NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
   CGFloat redValue = [userDefaults floatForKey:@"red"];
   CGFloat greenValue = [userDefaults floatForKey:@"green"];
@@ -77,21 +77,24 @@
 - (void)configUI {
     
     UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 60, self.view.frame.size.width, 60)];
-    
-    CommandBarButton *trash = [[CommandBarButton alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(onCustomBarButtonHit:)];
+    CommandBarButton *trash = [[CommandBarButton alloc] initWithTitle:@"删除" style:UIBarButtonItemStylePlain target:self action:@selector(onCustomBarButtonHit:)];
+    trash.image = [UIImage imageNamed:@"trash"];
     trash.command = [[DeleteScribbleCommand alloc]init];
     CommandBarButton *save = [[CommandBarButton alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(onCustomBarButtonHit:)];
     save.image = [UIImage imageNamed:@"save"];
     save.command = [[SaveScribbleCommand alloc]init];
-    CommandBarButton *upload = [[CommandBarButton alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:[CoordinatingController sharedInstance] action:@selector(requestViewChangeByObject:)];
-    upload
+    CommandBarButton *upload = [[CommandBarButton alloc] initWithTitle:@"退出" style:UIBarButtonItemStylePlain target:[CoordinatingController sharedInstance] action:@selector(requestViewChangeByObject:)];
+    upload.image = [UIImage imageNamed:@"close"];
     upload.tag = 2;
     CommandBarButton *set = [[CommandBarButton alloc] initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:[CoordinatingController sharedInstance] action:@selector(requestViewChangeByObject:)];
+    set.image = [UIImage imageNamed:@"setting"];
     set.tag = 1;
-    CommandBarButton *undo = [[CommandBarButton alloc] initWithTitle:@"撤销" style:UIBarButtonItemStylePlain target:[CoordinatingController sharedInstance] action:@selector(onBarButtonHit:)];
-    set.tag = 4;
-    CommandBarButton *redo = [[CommandBarButton alloc] initWithTitle:@"取消撤销" style:UIBarButtonItemStylePlain target:[CoordinatingController sharedInstance] action:@selector(onBarButtonHit:)];
-       set.tag = 5;
+    CommandBarButton *undo = [[CommandBarButton alloc] initWithTitle:@"撤销" style:UIBarButtonItemStylePlain target:self action:@selector(onBarButtonHit:)];
+    undo.image = [UIImage imageNamed:@"undo"];
+    undo.tag = 4;
+    CommandBarButton *redo = [[CommandBarButton alloc] initWithTitle:@"取消撤销" style:UIBarButtonItemStylePlain target:self action:@selector(onBarButtonHit:)];
+    redo.image = [UIImage imageNamed:@"redo"];
+    redo.tag = 5;
     [toolBar setItems:@[trash, save, upload, set, undo, redo]];
     [self.view addSubview:toolBar];
 }
@@ -101,16 +104,7 @@
 
 - (void) setStrokeSize:(CGFloat) aSize
 {
-  // enforce the smallest size
-  // allowed
-  if (aSize < 5.0)
-  {
-    strokeSize_ = 5.0;
-  }
-  else
-  {
     strokeSize_ = aSize;
-  }
 }
 
 - (void)onBarButtonHit:(id)button
@@ -131,6 +125,7 @@
 {
   [[barButton command] execute];
 }
+
 #pragma mark -
 #pragma mark Loading a CanvasView from a CanvasViewGenerator
 
@@ -143,7 +138,6 @@
   NSInteger viewIndex = [[[self view] subviews] count] - 1;
   [[self view] insertSubview:canvasView_ atIndex:viewIndex];
 }
-
 
 #pragma mark -
 #pragma mark Touch Event Handlers
@@ -209,28 +203,15 @@
     [singleDot setColor:strokeColor_];
     [singleDot setSize:strokeSize_];
     
-    //[scribble_ addMark:singleDot shouldAddToPreviousMark:NO];
-    
-    // retrieve a new NSInvocation for drawing and
-    // set new arguments for the draw command
     NSInvocation *drawInvocation = [self drawScribbleInvocation];
     [drawInvocation setArgument:&singleDot atIndex:2];
     
-    // retrieve a new NSInvocation for undrawing and
-    // set a new argument for the undraw command
     NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
     [undrawInvocation setArgument:&singleDot atIndex:2];
     
-    // execute the draw command with the undraw command
     [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
   }
-   
-  // reset the start point here
   startPoint_ = CGPointZero;
-  
-  // if this is the last point of stroke
-  // don't bother to draw it as the user
-  // won't tell the difference
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
@@ -295,8 +276,7 @@
 #pragma mark Draw Scribble Command Methods
 
 - (void) executeInvocation:(NSInvocation *)invocation
-        withUndoInvocation:(NSInvocation *)undoInvocation
-{
+        withUndoInvocation:(NSInvocation *)undoInvocation {
   [invocation retainArguments];
 
   [[self.undoManager prepareWithInvocationTarget:self]
@@ -307,8 +287,7 @@
 }
 
 - (void) unexecuteInvocation:(NSInvocation *)invocation
-          withRedoInvocation:(NSInvocation *)redoInvocation
-{
+          withRedoInvocation:(NSInvocation *)redoInvocation {
   [[self.undoManager prepareWithInvocationTarget:self]
    executeInvocation:redoInvocation
    withUndoInvocation:invocation];

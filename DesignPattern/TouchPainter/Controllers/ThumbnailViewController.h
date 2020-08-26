@@ -18,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 {
     @private
        ScribbleManager *scribbleManager_;
-       UINavigationItem *navItem_;
 }
 @end
 

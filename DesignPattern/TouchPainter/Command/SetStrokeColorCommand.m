@@ -12,7 +12,7 @@
 
 @implementation SetStrokeColorCommand
 
-@synthesize delegate=delegate_;
+//@synthesize delegate=delegate_;
 @synthesize postColorUpdateProvider=postColorUpdateProvider_;
 @synthesize RGBValuesProvider=RGBValuesProvider_;
 
@@ -26,13 +26,12 @@
   // Retrieve RGB values from a delegate or a block
   
   // Delegation (object adapter) approach:
-  [delegate_ command:self didRequestColorComponentsForRed:&redValue
+  [_delegate command:self didRequestColorComponentsForRed:&redValue
                                                     green:&greenValue
                                                      blue:&blueValue];
   
   // Block approach:
-  if (RGBValuesProvider_ != nil)
-  {
+  if (RGBValuesProvider_ != nil) {
     RGBValuesProvider_(&redValue, &greenValue, &blueValue);
   }
   
@@ -50,7 +49,7 @@
   // Forward a post update message
   
   // Delegation approach:
-  [delegate_ command:self didFinishColorUpdateWithColor:color];
+  [_delegate command:self didFinishColorUpdateWithColor:color];
   
   // Block approach:
   if (postColorUpdateProvider_ != nil)
