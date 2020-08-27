@@ -62,6 +62,14 @@
 		BF496E5C24F4E94C00B85E6D /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E5B24F4E94C00B85E6D /* MarkEnumerator.m */; };
 		BF496E6324F4EB2D00B85E6D /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E6224F4EB2D00B85E6D /* MarkRenderer.m */; };
 		BF496E6924F5011B00B85E6D /* ScribbleThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF496E6824F5011B00B85E6D /* ScribbleThumbnailCell.m */; };
+		BFD5231024F787980066D58F /* ConsoleEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5230F24F787980066D58F /* ConsoleEmulator.m */; };
+		BFD5231324F787D50066D58F /* ConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5231224F787D50066D58F /* ConsoleController.m */; };
+		BFD5231624F788100066D58F /* TouchConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5231524F788100066D58F /* TouchConsoleController.m */; };
+		BFD5231924F789400066D58F /* GameBoyEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5231824F789400066D58F /* GameBoyEmulator.m */; };
+		BFD5231C24F7895B0066D58F /* GameGearEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5231B24F7895B0066D58F /* GameGearEmulator.m */; };
+		BFD5232024F796D70066D58F /* CabDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5231F24F796D70066D58F /* CabDriver.m */; };
+		BFD5232324F796EA0066D58F /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5232224F796EA0066D58F /* Car.m */; };
+		BFD5232624F797000066D58F /* Taximeter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5232524F797000066D58F /* Taximeter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +206,23 @@
 		BF496E6424F4EB6600B85E6D /* MarkVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkVisitor.h; sourceTree = "<group>"; };
 		BF496E6724F5011B00B85E6D /* ScribbleThumbnailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailCell.h; sourceTree = "<group>"; };
 		BF496E6824F5011B00B85E6D /* ScribbleThumbnailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailCell.m; sourceTree = "<group>"; };
+		BFD5230B24F7876F0066D58F /* ConsoleCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsoleCommands.h; sourceTree = "<group>"; };
+		BFD5230E24F787980066D58F /* ConsoleEmulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsoleEmulator.h; sourceTree = "<group>"; };
+		BFD5230F24F787980066D58F /* ConsoleEmulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConsoleEmulator.m; sourceTree = "<group>"; };
+		BFD5231124F787D50066D58F /* ConsoleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsoleController.h; sourceTree = "<group>"; };
+		BFD5231224F787D50066D58F /* ConsoleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConsoleController.m; sourceTree = "<group>"; };
+		BFD5231424F788100066D58F /* TouchConsoleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchConsoleController.h; sourceTree = "<group>"; };
+		BFD5231524F788100066D58F /* TouchConsoleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchConsoleController.m; sourceTree = "<group>"; };
+		BFD5231724F789400066D58F /* GameBoyEmulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameBoyEmulator.h; sourceTree = "<group>"; };
+		BFD5231824F789400066D58F /* GameBoyEmulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameBoyEmulator.m; sourceTree = "<group>"; };
+		BFD5231A24F7895B0066D58F /* GameGearEmulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameGearEmulator.h; sourceTree = "<group>"; };
+		BFD5231B24F7895B0066D58F /* GameGearEmulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameGearEmulator.m; sourceTree = "<group>"; };
+		BFD5231E24F796D70066D58F /* CabDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CabDriver.h; sourceTree = "<group>"; };
+		BFD5231F24F796D70066D58F /* CabDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CabDriver.m; sourceTree = "<group>"; };
+		BFD5232124F796EA0066D58F /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		BFD5232224F796EA0066D58F /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		BFD5232424F797000066D58F /* Taximeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Taximeter.h; sourceTree = "<group>"; };
+		BFD5232524F797000066D58F /* Taximeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Taximeter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +278,8 @@
 				B5DFED9524A5A09B00986393 /* Singleton */,
 				B50EDC7923CB178700F9468F /* AbstractFactory */,
 				B5DFED8524A474C700986393 /* Builder */,
+				BFD5230924F787290066D58F /* Bridge */,
+				BFD5231D24F796AE0066D58F /* Taxicab */,
 				B50EDC1023C76AC800F9468F /* AppDelegate.h */,
 				B50EDC1123C76AC800F9468F /* AppDelegate.m */,
 				B50EDC1323C76AC800F9468F /* ViewController.h */,
@@ -382,6 +409,8 @@
 		B5DFED9924A5B3B700986393 /* Command */ = {
 			isa = PBXGroup;
 			children = (
+				BF496E4B24F4E23200B85E6D /* Command Slider */,
+				BF496E4724F4E1D600B85E6D /* Command Button */,
 				B5DFED9A24A5B3CD00986393 /* Command.h */,
 				B5DFED9B24A5B3CD00986393 /* Command.m */,
 				B5DFED9D24A5B42500986393 /* SetStrokeColorCommand.h */,
@@ -433,7 +462,6 @@
 				BF496E5724F4E58600B85E6D /* Mediator */,
 				BF496E4624F4C03600B85E6D /* Utilities */,
 				B50EDC4F23C76D5200F9468F /* Prototype */,
-				B50EDC6423CB0DCD00F9468F /* Views */,
 				B50EDC4223C76B0F00F9468F /* Controllers */,
 				B5DFED9924A5B3B700986393 /* Command */,
 				BF496E2424F4AB7400B85E6D /* MementoCommand */,
@@ -447,8 +475,6 @@
 			children = (
 				BF496E5324F4E31300B85E6D /* View2Image */,
 				BF496E4F24F4E28B00B85E6D /* Custom Stack */,
-				BF496E4B24F4E23200B85E6D /* Command Slider */,
-				BF496E4724F4E1D600B85E6D /* Command Button */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -501,6 +527,7 @@
 		BF496E5824F4E81800B85E6D /* Factory Method */ = {
 			isa = PBXGroup;
 			children = (
+				B50EDC6423CB0DCD00F9468F /* Views */,
 				B50EDC6E23CB0FD000F9468F /* CanvasViewGenerator.h */,
 				B50EDC6F23CB0FD000F9468F /* CanvasViewGenerator.m */,
 				B50EDC7123CB108200F9468F /* PaperCanvasViewGenerator.h */,
@@ -529,6 +556,45 @@
 				BF496E6424F4EB6600B85E6D /* MarkVisitor.h */,
 			);
 			path = Vistor;
+			sourceTree = "<group>";
+		};
+		BFD5230924F787290066D58F /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5230A24F787490066D58F /* Concrete Emulators */,
+				BFD5230B24F7876F0066D58F /* ConsoleCommands.h */,
+				BFD5231124F787D50066D58F /* ConsoleController.h */,
+				BFD5231224F787D50066D58F /* ConsoleController.m */,
+				BFD5231424F788100066D58F /* TouchConsoleController.h */,
+				BFD5231524F788100066D58F /* TouchConsoleController.m */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		BFD5230A24F787490066D58F /* Concrete Emulators */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5230E24F787980066D58F /* ConsoleEmulator.h */,
+				BFD5230F24F787980066D58F /* ConsoleEmulator.m */,
+				BFD5231724F789400066D58F /* GameBoyEmulator.h */,
+				BFD5231824F789400066D58F /* GameBoyEmulator.m */,
+				BFD5231A24F7895B0066D58F /* GameGearEmulator.h */,
+				BFD5231B24F7895B0066D58F /* GameGearEmulator.m */,
+			);
+			path = "Concrete Emulators";
+			sourceTree = "<group>";
+		};
+		BFD5231D24F796AE0066D58F /* Taxicab */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5231E24F796D70066D58F /* CabDriver.h */,
+				BFD5231F24F796D70066D58F /* CabDriver.m */,
+				BFD5232124F796EA0066D58F /* Car.h */,
+				BFD5232224F796EA0066D58F /* Car.m */,
+				BFD5232424F797000066D58F /* Taximeter.h */,
+				BFD5232524F797000066D58F /* Taximeter.m */,
+			);
+			path = Taxicab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -664,19 +730,24 @@
 				BF496E2D24F4B22200B85E6D /* ScribbleMemento.m in Sources */,
 				B5DFED9424A599E300986393 /* GameClient.m in Sources */,
 				B50EDC8E23CB1D1A00F9468F /* SierraView.m in Sources */,
+				BFD5232324F796EA0066D58F /* Car.m in Sources */,
 				B50EDC4523C76B4800F9468F /* CanvasViewController.m in Sources */,
 				B50EDC6123C9E06000F9468F /* Stroke.m in Sources */,
 				B50EDC6723CB0EA100F9468F /* CanvasView.m in Sources */,
 				BF496E4124F4BA8400B85E6D /* OpenScribbleCommand.m in Sources */,
+				BFD5231624F788100066D58F /* TouchConsoleController.m in Sources */,
 				BF496E5224F4E2A600B85E6D /* NSMutableArray+Stack.m in Sources */,
 				B5DFED9124A596CF00986393 /* ChasingGame.m in Sources */,
 				B50EDC7C23CB183E00F9468F /* BrandingFactory.m in Sources */,
+				BFD5231024F787980066D58F /* ConsoleEmulator.m in Sources */,
 				B50EDC9723CB1E6600F9468F /* BrandingViewController.m in Sources */,
 				BF496E2724F4B1E600B85E6D /* ScribbleManager.m in Sources */,
 				BF496E3B24F4B6D100B85E6D /* ScribbleThumbnailViewImageProxy.m in Sources */,
 				B50EDC8B23CB1CED00F9468F /* AcmToolbar.m in Sources */,
+				BFD5232624F797000066D58F /* Taximeter.m in Sources */,
 				BF496E4424F4BB8700B85E6D /* SetStrokeSizeCommand.m in Sources */,
 				BF496E5C24F4E94C00B85E6D /* MarkEnumerator.m in Sources */,
+				BFD5231324F787D50066D58F /* ConsoleController.m in Sources */,
 				B50EDC5B23C76EF800F9468F /* Vertex.m in Sources */,
 				B50EDC1523C76AC800F9468F /* ViewController.m in Sources */,
 				BF496E6924F5011B00B85E6D /* ScribbleThumbnailCell.m in Sources */,
@@ -685,10 +756,12 @@
 				B5DFED8E24A5955600986393 /* StandardCharacterBuilder.m in Sources */,
 				B50EDC2023C76ACB00F9468F /* main.m in Sources */,
 				B50EDC6D23CB0F7400F9468F /* ClothCanvasView.m in Sources */,
+				BFD5231924F789400066D58F /* GameBoyEmulator.m in Sources */,
 				BF496E4A24F4E1F600B85E6D /* CommandBarButton.m in Sources */,
 				BF496E2324F4AB2400B85E6D /* SaveScribbleCommand.m in Sources */,
 				B50EDC8523CB1CB400F9468F /* AcmView.m in Sources */,
 				B50EDC8223CB1AA800F9468F /* SierraBrandingFactory.m in Sources */,
+				BFD5232024F796D70066D58F /* CabDriver.m in Sources */,
 				B50EDC4B23C76B7C00F9468F /* ThumbnailViewController.m in Sources */,
 				B5DFED8824A4986600986393 /* Character.m in Sources */,
 				B50EDC8823CB1CCE00F9468F /* AcmMainButton.m in Sources */,
@@ -700,6 +773,7 @@
 				B50EDC7F23CB1A5100F9468F /* AcmeBrandingFactory.m in Sources */,
 				B5DFED8B24A49B9F00986393 /* CharacterBuilder.m in Sources */,
 				B50EDC7023CB0FD000F9468F /* CanvasViewGenerator.m in Sources */,
+				BFD5231C24F7895B0066D58F /* GameGearEmulator.m in Sources */,
 				BF496E3524F4B67800B85E6D /* ScribbleThumbnailView.m in Sources */,
 				B50EDC7323CB108200F9468F /* PaperCanvasViewGenerator.m in Sources */,
 				B5DFED9F24A5B42500986393 /* SetStrokeColorCommand.m in Sources */,

@@ -13,7 +13,8 @@
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         UIImage *backgroundImage = [UIImage imageNamed:@"paper"];
-        UIImageView *backgroundView = [[UIImageView alloc] initWithImage:backgroundImage];
+        UIImageView *backgroundView = [[UIImageView alloc] initWithFrame:frame];
+        backgroundView.image = backgroundImage;
         [self addSubview:backgroundView];
     }
     

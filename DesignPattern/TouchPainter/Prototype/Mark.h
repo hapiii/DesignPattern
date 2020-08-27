@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) id <Mark> lastChild;
 
 - (id) copy;
+
 - (void) addMark:(id <Mark>) mark;
 - (void) removeMark:(id <Mark>) mark;
 - (id <Mark>) childMarkAtIndex:(NSUInteger) index;

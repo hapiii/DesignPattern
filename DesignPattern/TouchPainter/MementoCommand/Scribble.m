@@ -34,28 +34,22 @@
 
 - (void) addMark:(id <Mark>)aMark shouldAddToPreviousMark:(BOOL)shouldAddToPreviousMark
 {
-  // manual KVO invocation
+  // 手动调用KVO
   [self willChangeValueForKey:@"mark"];
   
-  // if the flag is set to YES
-  // then add this aMark to the
-  // *PREVIOUS*Mark as part of an
-  // aggregate.
-  // Based on our design, it's supposed
-  // to be the last child of the main
-  // parent
+  /*如果标记为YES,就把这个aMark嫁到前一个Mark作为聚合体的一部分,根据我们的设计,它应该是根节点的最后一个子节点*/
   if (shouldAddToPreviousMark)
   {
     [[parentMark_ lastChild] addMark:aMark];
   }
-  // otherwise attach it to the parent
+  // 否则把它加到父节点
   else
   {
     [parentMark_ addMark:aMark];
     incrementalMark_ = aMark;
   }
   
-  // manual KVO invocation
+  // 手动调用KVO
   [self didChangeValueForKey:@"mark"];
 }
 

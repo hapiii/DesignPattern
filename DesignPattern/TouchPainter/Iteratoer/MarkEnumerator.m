@@ -13,8 +13,7 @@
 
 - (NSArray *)allObjects
 {
-  // returns an array of yet-visited Mark nodes
-  // i.e. the remaining elements in the stack
+  ///栈
   return [[stack_ reverseObjectEnumerator] allObjects];
 }
 
@@ -41,7 +40,7 @@
   
   return self;
 }
-
+///创建栈
 - (void) traverseAndBuildStackWithMark:(id <Mark>)mark
 {
   // push post-order traversal

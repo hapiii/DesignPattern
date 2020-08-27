@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CommandBarButton : UIBarButtonItem
 
-
 @property (nonatomic, strong) Command *command;
 
 @end

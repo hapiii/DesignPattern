@@ -11,8 +11,6 @@
 
 @implementation CanvasView
 
-
-
 - (id)initWithFrame:(CGRect)frame
 {
   if ((self = [super initWithFrame:frame]))

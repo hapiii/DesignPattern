@@ -12,6 +12,8 @@
 #import "DeleteScribbleCommand.h"
 #import "SaveScribbleCommand.h"
 #import "CoordinatingController.h"
+#import "ClothCanvasViewGenerator.h"
+#import "PaperCanvasViewGenerator.h"
 
 @interface CanvasViewController ()
 
@@ -31,9 +33,7 @@
   {
     scribble_ = aScribble;
     
-    // add itself to the scribble as
-    // an observer for any changes to
-    // its internal state - mark
+   ///添加mark观察
     [scribble_ addObserver:self
                 forKeyPath:@"mark"
                    options:NSKeyValueObservingOptionInitial |
@@ -47,12 +47,9 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  [self configUI];
   
-    [self configUI];
-  // Get a default canvas view
-  // with the factory method of
-  // the CanvasViewGenerator
-  CanvasViewGenerator *defaultGenerator = [[CanvasViewGenerator alloc] init];
+  PaperCanvasViewGenerator *defaultGenerator = [[PaperCanvasViewGenerator alloc] init];
   [self loadCanvasViewWithGenerator:defaultGenerator];
   
   // initialize a Scribble model
@@ -150,9 +147,7 @@
 {
   CGPoint lastPoint = [[touches anyObject] previousLocationInView:canvasView_];
   
-  // add a new stroke to scribble
-  // if this is indeed a drag from
-  // a finger
+  //如果是手指拖动,像涂鸦添加一个线条
   if (CGPointEqualToPoint(lastPoint, startPoint_))
   {
     id <Mark> newStroke = [[Stroke alloc] init];
@@ -175,8 +170,7 @@
     [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
   }
   
-  // add the current touch as another vertex to the
-  // temp stroke
+//把当前触摸点作为顶点儿添加到临时线条
   CGPoint thisPoint = [[touches anyObject] locationInView:canvasView_];
   Vertex *vertex = [[Vertex alloc]
                      initWithLocation:thisPoint];
@@ -191,9 +185,7 @@
   CGPoint lastPoint = [[touches anyObject] previousLocationInView:canvasView_];
   CGPoint thisPoint = [[touches anyObject] locationInView:canvasView_];
   
-  // if the touch never moves (stays at the same spot until lifted now)
-  // just add a dot to an existing stroke composite
-  // otherwise add it to the temp stroke as the last vertex
+  //如果触摸点从未移动(抬起之前一直在同一处)就像现有Stroke组合体添加一个点,否则就吧她作为最后一个顶点添加到临时线条
   if (CGPointEqualToPoint(lastPoint, thisPoint))
   {
     Dot *singleDot = [[Dot alloc]
@@ -210,6 +202,7 @@
     
     [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
   }
+    //在此重置起点
   startPoint_ = CGPointZero;
 }
 

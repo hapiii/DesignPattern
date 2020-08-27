@@ -33,20 +33,18 @@
   // get a new index for the new scribble data and its thumbnail
   NSInteger newIndex = [self numberOfScribbles] + 1;
   
-  // use the index as part of the name for each of them
+  //索引值作为名字的一部分
   NSString *scribbleDataName = [NSString stringWithFormat:@"data_%d", newIndex];
   NSString *scribbleThumbnailName = [NSString stringWithFormat:@"thumbnail_%d.png",newIndex];
   
-  // get a memento from the scribble
-  // then save the memento in the file system
+ //从涂鸦获取备忘录,然后保存到文件系统
   ScribbleMemento *scribbleMemento = [scribble scribbleMemento];
   NSData *mementoData = [scribbleMemento data];
   NSString *mementoPath = [[self scribbleDataPath]
                            stringByAppendingPathComponent:scribbleDataName];
   [mementoData writeToFile:mementoPath atomically:YES];
   
-  // save the thumbnail directly in
-  // the file system
+  ///把缩略图直接保存到文件系统
   NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation(image)];
   NSString *imagePath = [[self scribbleThumbnailPath]
                          stringByAppendingPathComponent:scribbleThumbnailName];

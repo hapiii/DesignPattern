@@ -57,6 +57,7 @@
   }
   else
   {
+      ///让数组中的每个对象调用sel
     [children_ makeObjectsPerformSelector:@selector(removeMark:)
                                withObject:mark];
   }

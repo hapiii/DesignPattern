@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
   id <Mark> incrementalMark_;
 }
 
-// methods for Mark management
+// 管理Mark的方法
 - (void) addMark:(id <Mark>)aMark shouldAddToPreviousMark:(BOOL)shouldAddToPreviousMark;
 - (void) removeMark:(id <Mark>)aMark;
 

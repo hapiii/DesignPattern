@@ -13,7 +13,9 @@
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         UIImage *backgroundImage = [UIImage imageNamed:@"cloth"];
-        UIImageView *backgroundView = [[UIImageView alloc] initWithImage:backgroundImage];
+        UIImageView *backgroundView = [[UIImageView alloc] initWithFrame:frame];
+        backgroundView.image = backgroundImage;
+        backgroundView.userInteractionEnabled = YES;
         [self addSubview:backgroundView];
     }
     

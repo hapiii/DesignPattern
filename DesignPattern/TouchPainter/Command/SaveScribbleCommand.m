@@ -27,10 +27,8 @@
   // to save the scribble and its thumbnail
   ScribbleManager *scribbleManager = [[ScribbleManager alloc] init];
   [scribbleManager saveScribble:scribble thumbnail:canvasViewImage];
-  
-  // finally show an alertbox that says
-  // after the scribble is saved
-  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Your scribble is saved"
+
+  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"涂鸦保存成功!"
                                                       message:nil
                                                      delegate:nil
                                             cancelButtonTitle:@"OK"
