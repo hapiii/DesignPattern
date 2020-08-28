@@ -40,6 +40,7 @@
   
   return self;
 }
+
 ///创建栈
 - (void) traverseAndBuildStackWithMark:(id <Mark>)mark
 {

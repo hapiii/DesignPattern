@@ -70,6 +70,40 @@
 		BFD5232024F796D70066D58F /* CabDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5231F24F796D70066D58F /* CabDriver.m */; };
 		BFD5232324F796EA0066D58F /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5232224F796EA0066D58F /* Car.m */; };
 		BFD5232624F797000066D58F /* Taximeter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5232524F797000066D58F /* Taximeter.m */; };
+		BFD5232D24F8DBE10066D58F /* UIImage+ImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5232C24F8DBE10066D58F /* UIImage+ImageComponent.m */; };
+		BFD5233024F8DC1B0066D58F /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5232F24F8DC1B0066D58F /* ImageFilter.m */; };
+		BFD5233324F8DC670066D58F /* ImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5233224F8DC670066D58F /* ImageTransformFilter.m */; };
+		BFD5233624F8DDC20066D58F /* ImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5233524F8DDC20066D58F /* ImageShadowFilter.m */; };
+		BFD5233924F8DF290066D58F /* DecoratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5233824F8DF290066D58F /* DecoratorViewController.m */; };
+		BFD5233C24F8DF780066D58F /* DecoratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5233A24F8DF780066D58F /* DecoratorView.m */; };
+		BFD5234224F8DFC60066D58F /* UIImage+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5234024F8DFC60066D58F /* UIImage+Shadow.m */; };
+		BFD5234324F8DFC60066D58F /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5234124F8DFC60066D58F /* UIImage+Transform.m */; };
+		BFD5234624F8DFCE0066D58F /* UIImage+BaseFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5234524F8DFCE0066D58F /* UIImage+BaseFilter.m */; };
+		BFD5234B24F9038E0066D58F /* Attack.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5234A24F9038E0066D58F /* Attack.m */; };
+		BFD5234E24F903A10066D58F /* SwordAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5234D24F903A10066D58F /* SwordAttack.m */; };
+		BFD5235124F903B10066D58F /* MagicFireAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5235024F903B10066D58F /* MagicFireAttack.m */; };
+		BFD5235424F903C40066D58F /* LightningAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5235324F903C40066D58F /* LightningAttack.m */; };
+		BFD5235824F9045D0066D58F /* AttackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5235724F9045D0066D58F /* AttackHandler.m */; };
+		BFD5235B24F904C50066D58F /* MetalArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5235A24F904C50066D58F /* MetalArmor.m */; };
+		BFD5235E24F905660066D58F /* CrystalShield.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5235D24F905660066D58F /* CrystalShield.m */; };
+		BFD5236124F9067D0066D58F /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5236024F9067D0066D58F /* Avatar.m */; };
+		BFD5236424F906C00066D58F /* ChainOfResponsibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5236324F906C00066D58F /* ChainOfResponsibilityViewController.m */; };
+		BFD5236924F90A3E0066D58F /* AnySandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5236824F90A3E0066D58F /* AnySandwich.m */; };
+		BFD5236C24F90A9D0066D58F /* ReubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5236B24F90A9D0066D58F /* ReubenSandwich.m */; };
+		BFD5236F24F90AC20066D58F /* Hamburger.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5236E24F90AC20066D58F /* Hamburger.m */; };
+		BFD5237224F90AE90066D58F /* Hotdog.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5237124F90AE80066D58F /* Hotdog.m */; };
+		BFD5237624F910890066D58F /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5237524F910890066D58F /* InputValidator.m */; };
+		BFD5237924F911A70066D58F /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5237824F911A70066D58F /* CustomTextField.m */; };
+		BFD5237C24F9128A0066D58F /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5237B24F9128A0066D58F /* AlphaInputValidator.m */; };
+		BFD5237F24F912B40066D58F /* NumericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5237E24F912B40066D58F /* NumericInputValidator.m */; };
+		BFD5238224F913550066D58F /* StrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5238124F913550066D58F /* StrategyViewController.m */; };
+		BFD5238624F9174D0066D58F /* FlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5238524F9174D0066D58F /* FlowerFactory.m */; };
+		BFD5238E24F9178E0066D58F /* cosmos.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD5238824F9178E0066D58F /* cosmos.png */; };
+		BFD5238F24F9178E0066D58F /* gerberas.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD5238924F9178E0066D58F /* gerberas.png */; };
+		BFD5239024F9178E0066D58F /* zinnia.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD5238A24F9178E0066D58F /* zinnia.png */; };
+		BFD5239124F9178E0066D58F /* jasmine.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD5238B24F9178E0066D58F /* jasmine.png */; };
+		BFD5239224F9178E0066D58F /* hollyhock.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD5238C24F9178E0066D58F /* hollyhock.png */; };
+		BFD5239324F9178E0066D58F /* anemone.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD5238D24F9178E0066D58F /* anemone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,6 +257,69 @@
 		BFD5232224F796EA0066D58F /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		BFD5232424F797000066D58F /* Taximeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Taximeter.h; sourceTree = "<group>"; };
 		BFD5232524F797000066D58F /* Taximeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Taximeter.m; sourceTree = "<group>"; };
+		BFD5232824F8DBA70066D58F /* ImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageComponent.h; sourceTree = "<group>"; };
+		BFD5232B24F8DBE10066D58F /* UIImage+ImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageComponent.h"; sourceTree = "<group>"; };
+		BFD5232C24F8DBE10066D58F /* UIImage+ImageComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageComponent.m"; sourceTree = "<group>"; };
+		BFD5232E24F8DC1B0066D58F /* ImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilter.h; sourceTree = "<group>"; };
+		BFD5232F24F8DC1B0066D58F /* ImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilter.m; sourceTree = "<group>"; };
+		BFD5233124F8DC670066D58F /* ImageTransformFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTransformFilter.h; sourceTree = "<group>"; };
+		BFD5233224F8DC670066D58F /* ImageTransformFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTransformFilter.m; sourceTree = "<group>"; };
+		BFD5233424F8DDC20066D58F /* ImageShadowFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageShadowFilter.h; sourceTree = "<group>"; };
+		BFD5233524F8DDC20066D58F /* ImageShadowFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageShadowFilter.m; sourceTree = "<group>"; };
+		BFD5233724F8DF290066D58F /* DecoratorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorViewController.h; sourceTree = "<group>"; };
+		BFD5233824F8DF290066D58F /* DecoratorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorViewController.m; sourceTree = "<group>"; };
+		BFD5233A24F8DF780066D58F /* DecoratorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecoratorView.m; sourceTree = "<group>"; };
+		BFD5233B24F8DF780066D58F /* DecoratorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoratorView.h; sourceTree = "<group>"; };
+		BFD5233E24F8DFC60066D58F /* UIImage+Shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Shadow.h"; sourceTree = "<group>"; };
+		BFD5233F24F8DFC60066D58F /* UIImage+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Transform.h"; sourceTree = "<group>"; };
+		BFD5234024F8DFC60066D58F /* UIImage+Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Shadow.m"; sourceTree = "<group>"; };
+		BFD5234124F8DFC60066D58F /* UIImage+Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Transform.m"; sourceTree = "<group>"; };
+		BFD5234424F8DFCE0066D58F /* UIImage+BaseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BaseFilter.h"; sourceTree = "<group>"; };
+		BFD5234524F8DFCE0066D58F /* UIImage+BaseFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BaseFilter.m"; sourceTree = "<group>"; };
+		BFD5234924F9038E0066D58F /* Attack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attack.h; sourceTree = "<group>"; };
+		BFD5234A24F9038E0066D58F /* Attack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Attack.m; sourceTree = "<group>"; };
+		BFD5234C24F903A10066D58F /* SwordAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwordAttack.h; sourceTree = "<group>"; };
+		BFD5234D24F903A10066D58F /* SwordAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwordAttack.m; sourceTree = "<group>"; };
+		BFD5234F24F903B10066D58F /* MagicFireAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicFireAttack.h; sourceTree = "<group>"; };
+		BFD5235024F903B10066D58F /* MagicFireAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicFireAttack.m; sourceTree = "<group>"; };
+		BFD5235224F903C40066D58F /* LightningAttack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningAttack.h; sourceTree = "<group>"; };
+		BFD5235324F903C40066D58F /* LightningAttack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningAttack.m; sourceTree = "<group>"; };
+		BFD5235624F9045D0066D58F /* AttackHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttackHandler.h; sourceTree = "<group>"; };
+		BFD5235724F9045D0066D58F /* AttackHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttackHandler.m; sourceTree = "<group>"; };
+		BFD5235924F904C50066D58F /* MetalArmor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalArmor.h; sourceTree = "<group>"; };
+		BFD5235A24F904C50066D58F /* MetalArmor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalArmor.m; sourceTree = "<group>"; };
+		BFD5235C24F905660066D58F /* CrystalShield.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrystalShield.h; sourceTree = "<group>"; };
+		BFD5235D24F905660066D58F /* CrystalShield.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalShield.m; sourceTree = "<group>"; };
+		BFD5235F24F9067D0066D58F /* Avatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
+		BFD5236024F9067D0066D58F /* Avatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
+		BFD5236224F906C00066D58F /* ChainOfResponsibilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainOfResponsibilityViewController.h; sourceTree = "<group>"; };
+		BFD5236324F906C00066D58F /* ChainOfResponsibilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainOfResponsibilityViewController.m; sourceTree = "<group>"; };
+		BFD5236724F90A3E0066D58F /* AnySandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnySandwich.h; sourceTree = "<group>"; };
+		BFD5236824F90A3E0066D58F /* AnySandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnySandwich.m; sourceTree = "<group>"; };
+		BFD5236A24F90A9D0066D58F /* ReubenSandwich.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReubenSandwich.h; sourceTree = "<group>"; };
+		BFD5236B24F90A9D0066D58F /* ReubenSandwich.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReubenSandwich.m; sourceTree = "<group>"; };
+		BFD5236D24F90AC20066D58F /* Hamburger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hamburger.h; sourceTree = "<group>"; };
+		BFD5236E24F90AC20066D58F /* Hamburger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hamburger.m; sourceTree = "<group>"; };
+		BFD5237024F90AE80066D58F /* Hotdog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hotdog.h; sourceTree = "<group>"; };
+		BFD5237124F90AE80066D58F /* Hotdog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hotdog.m; sourceTree = "<group>"; };
+		BFD5237424F910890066D58F /* InputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		BFD5237524F910890066D58F /* InputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		BFD5237724F911A70066D58F /* CustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		BFD5237824F911A70066D58F /* CustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		BFD5237A24F9128A0066D58F /* AlphaInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlphaInputValidator.h; sourceTree = "<group>"; };
+		BFD5237B24F9128A0066D58F /* AlphaInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphaInputValidator.m; sourceTree = "<group>"; };
+		BFD5237D24F912B40066D58F /* NumericInputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumericInputValidator.h; sourceTree = "<group>"; };
+		BFD5237E24F912B40066D58F /* NumericInputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumericInputValidator.m; sourceTree = "<group>"; };
+		BFD5238024F913550066D58F /* StrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyViewController.h; sourceTree = "<group>"; };
+		BFD5238124F913550066D58F /* StrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyViewController.m; sourceTree = "<group>"; };
+		BFD5238424F9174D0066D58F /* FlowerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerFactory.h; sourceTree = "<group>"; };
+		BFD5238524F9174D0066D58F /* FlowerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerFactory.m; sourceTree = "<group>"; };
+		BFD5238824F9178E0066D58F /* cosmos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cosmos.png; sourceTree = "<group>"; };
+		BFD5238924F9178E0066D58F /* gerberas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gerberas.png; sourceTree = "<group>"; };
+		BFD5238A24F9178E0066D58F /* zinnia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zinnia.png; sourceTree = "<group>"; };
+		BFD5238B24F9178E0066D58F /* jasmine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jasmine.png; sourceTree = "<group>"; };
+		BFD5238C24F9178E0066D58F /* hollyhock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hollyhock.png; sourceTree = "<group>"; };
+		BFD5238D24F9178E0066D58F /* anemone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anemone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,12 +371,17 @@
 		B50EDC0F23C76AC800F9468F /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				BFD5238324F917210066D58F /* Flyweight */,
 				BF496E4524F4BCBC00B85E6D /* TouchPainter */,
 				B5DFED9524A5A09B00986393 /* Singleton */,
 				B50EDC7923CB178700F9468F /* AbstractFactory */,
 				B5DFED8524A474C700986393 /* Builder */,
 				BFD5230924F787290066D58F /* Bridge */,
 				BFD5231D24F796AE0066D58F /* Taxicab */,
+				BFD5232724F8DB460066D58F /* Decotator */,
+				BFD5234724F9035B0066D58F /* ChainOfResponsibility */,
+				BFD5236524F90A050066D58F /* TemplateMethod */,
+				BFD5237324F910510066D58F /* Strategy */,
 				B50EDC1023C76AC800F9468F /* AppDelegate.h */,
 				B50EDC1123C76AC800F9468F /* AppDelegate.m */,
 				B50EDC1323C76AC800F9468F /* ViewController.h */,
@@ -474,7 +576,6 @@
 			isa = PBXGroup;
 			children = (
 				BF496E5324F4E31300B85E6D /* View2Image */,
-				BF496E4F24F4E28B00B85E6D /* Custom Stack */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -541,6 +642,7 @@
 		BF496E5924F4E8D500B85E6D /* Iteratoer */ = {
 			isa = PBXGroup;
 			children = (
+				BF496E4F24F4E28B00B85E6D /* Custom Stack */,
 				BF496E5A24F4E94C00B85E6D /* MarkEnumerator.h */,
 				BF496E5B24F4E94C00B85E6D /* MarkEnumerator.m */,
 				BF496E5D24F4E98400B85E6D /* MarkEnumerator+Internal.h */,
@@ -595,6 +697,144 @@
 				BFD5232524F797000066D58F /* Taximeter.m */,
 			);
 			path = Taxicab;
+			sourceTree = "<group>";
+		};
+		BFD5232724F8DB460066D58F /* Decotator */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5233D24F8DFBA0066D58F /* Categories */,
+				BFD5232824F8DBA70066D58F /* ImageComponent.h */,
+				BFD5232B24F8DBE10066D58F /* UIImage+ImageComponent.h */,
+				BFD5232C24F8DBE10066D58F /* UIImage+ImageComponent.m */,
+				BFD5232E24F8DC1B0066D58F /* ImageFilter.h */,
+				BFD5232F24F8DC1B0066D58F /* ImageFilter.m */,
+				BFD5233124F8DC670066D58F /* ImageTransformFilter.h */,
+				BFD5233224F8DC670066D58F /* ImageTransformFilter.m */,
+				BFD5233424F8DDC20066D58F /* ImageShadowFilter.h */,
+				BFD5233524F8DDC20066D58F /* ImageShadowFilter.m */,
+				BFD5233B24F8DF780066D58F /* DecoratorView.h */,
+				BFD5233A24F8DF780066D58F /* DecoratorView.m */,
+				BFD5233724F8DF290066D58F /* DecoratorViewController.h */,
+				BFD5233824F8DF290066D58F /* DecoratorViewController.m */,
+			);
+			path = Decotator;
+			sourceTree = "<group>";
+		};
+		BFD5233D24F8DFBA0066D58F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5234424F8DFCE0066D58F /* UIImage+BaseFilter.h */,
+				BFD5234524F8DFCE0066D58F /* UIImage+BaseFilter.m */,
+				BFD5233E24F8DFC60066D58F /* UIImage+Shadow.h */,
+				BFD5234024F8DFC60066D58F /* UIImage+Shadow.m */,
+				BFD5233F24F8DFC60066D58F /* UIImage+Transform.h */,
+				BFD5234124F8DFC60066D58F /* UIImage+Transform.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		BFD5234724F9035B0066D58F /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5235524F903D90066D58F /* AttackHanders */,
+				BFD5234824F9036E0066D58F /* Attacks */,
+				BFD5236224F906C00066D58F /* ChainOfResponsibilityViewController.h */,
+				BFD5236324F906C00066D58F /* ChainOfResponsibilityViewController.m */,
+			);
+			path = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
+		BFD5234824F9036E0066D58F /* Attacks */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5234924F9038E0066D58F /* Attack.h */,
+				BFD5234A24F9038E0066D58F /* Attack.m */,
+				BFD5234C24F903A10066D58F /* SwordAttack.h */,
+				BFD5234D24F903A10066D58F /* SwordAttack.m */,
+				BFD5234F24F903B10066D58F /* MagicFireAttack.h */,
+				BFD5235024F903B10066D58F /* MagicFireAttack.m */,
+				BFD5235224F903C40066D58F /* LightningAttack.h */,
+				BFD5235324F903C40066D58F /* LightningAttack.m */,
+			);
+			path = Attacks;
+			sourceTree = "<group>";
+		};
+		BFD5235524F903D90066D58F /* AttackHanders */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5235624F9045D0066D58F /* AttackHandler.h */,
+				BFD5235724F9045D0066D58F /* AttackHandler.m */,
+				BFD5235924F904C50066D58F /* MetalArmor.h */,
+				BFD5235A24F904C50066D58F /* MetalArmor.m */,
+				BFD5235C24F905660066D58F /* CrystalShield.h */,
+				BFD5235D24F905660066D58F /* CrystalShield.m */,
+				BFD5235F24F9067D0066D58F /* Avatar.h */,
+				BFD5236024F9067D0066D58F /* Avatar.m */,
+			);
+			path = AttackHanders;
+			sourceTree = "<group>";
+		};
+		BFD5236524F90A050066D58F /* TemplateMethod */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5236624F90A2B0066D58F /* Sandwiches */,
+			);
+			path = TemplateMethod;
+			sourceTree = "<group>";
+		};
+		BFD5236624F90A2B0066D58F /* Sandwiches */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5236724F90A3E0066D58F /* AnySandwich.h */,
+				BFD5236824F90A3E0066D58F /* AnySandwich.m */,
+				BFD5236A24F90A9D0066D58F /* ReubenSandwich.h */,
+				BFD5236B24F90A9D0066D58F /* ReubenSandwich.m */,
+				BFD5236D24F90AC20066D58F /* Hamburger.h */,
+				BFD5236E24F90AC20066D58F /* Hamburger.m */,
+				BFD5237024F90AE80066D58F /* Hotdog.h */,
+				BFD5237124F90AE80066D58F /* Hotdog.m */,
+			);
+			path = Sandwiches;
+			sourceTree = "<group>";
+		};
+		BFD5237324F910510066D58F /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5237424F910890066D58F /* InputValidator.h */,
+				BFD5237524F910890066D58F /* InputValidator.m */,
+				BFD5237A24F9128A0066D58F /* AlphaInputValidator.h */,
+				BFD5237B24F9128A0066D58F /* AlphaInputValidator.m */,
+				BFD5237D24F912B40066D58F /* NumericInputValidator.h */,
+				BFD5237E24F912B40066D58F /* NumericInputValidator.m */,
+				BFD5237724F911A70066D58F /* CustomTextField.h */,
+				BFD5237824F911A70066D58F /* CustomTextField.m */,
+				BFD5238024F913550066D58F /* StrategyViewController.h */,
+				BFD5238124F913550066D58F /* StrategyViewController.m */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		BFD5238324F917210066D58F /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5238724F9178E0066D58F /* images */,
+				BFD5238424F9174D0066D58F /* FlowerFactory.h */,
+				BFD5238524F9174D0066D58F /* FlowerFactory.m */,
+			);
+			path = Flyweight;
+			sourceTree = "<group>";
+		};
+		BFD5238724F9178E0066D58F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5238824F9178E0066D58F /* cosmos.png */,
+				BFD5238924F9178E0066D58F /* gerberas.png */,
+				BFD5238A24F9178E0066D58F /* zinnia.png */,
+				BFD5238B24F9178E0066D58F /* jasmine.png */,
+				BFD5238C24F9178E0066D58F /* hollyhock.png */,
+				BFD5238D24F9178E0066D58F /* anemone.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -700,8 +940,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD5239024F9178E0066D58F /* zinnia.png in Resources */,
 				B50EDC1D23C76ACB00F9468F /* LaunchScreen.storyboard in Resources */,
+				BFD5238E24F9178E0066D58F /* cosmos.png in Resources */,
+				BFD5238F24F9178E0066D58F /* gerberas.png in Resources */,
 				B50EDC1A23C76ACB00F9468F /* Assets.xcassets in Resources */,
+				BFD5239224F9178E0066D58F /* hollyhock.png in Resources */,
+				BFD5239124F9178E0066D58F /* jasmine.png in Resources */,
+				BFD5239324F9178E0066D58F /* anemone.png in Resources */,
 				B50EDC1823C76AC800F9468F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,13 +973,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD5238224F913550066D58F /* StrategyViewController.m in Sources */,
 				BF496E2D24F4B22200B85E6D /* ScribbleMemento.m in Sources */,
 				B5DFED9424A599E300986393 /* GameClient.m in Sources */,
+				BFD5232D24F8DBE10066D58F /* UIImage+ImageComponent.m in Sources */,
 				B50EDC8E23CB1D1A00F9468F /* SierraView.m in Sources */,
+				BFD5234E24F903A10066D58F /* SwordAttack.m in Sources */,
 				BFD5232324F796EA0066D58F /* Car.m in Sources */,
 				B50EDC4523C76B4800F9468F /* CanvasViewController.m in Sources */,
+				BFD5237624F910890066D58F /* InputValidator.m in Sources */,
+				BFD5236424F906C00066D58F /* ChainOfResponsibilityViewController.m in Sources */,
+				BFD5235E24F905660066D58F /* CrystalShield.m in Sources */,
+				BFD5237C24F9128A0066D58F /* AlphaInputValidator.m in Sources */,
+				BFD5235424F903C40066D58F /* LightningAttack.m in Sources */,
 				B50EDC6123C9E06000F9468F /* Stroke.m in Sources */,
+				BFD5233324F8DC670066D58F /* ImageTransformFilter.m in Sources */,
+				BFD5234224F8DFC60066D58F /* UIImage+Shadow.m in Sources */,
 				B50EDC6723CB0EA100F9468F /* CanvasView.m in Sources */,
+				BFD5238624F9174D0066D58F /* FlowerFactory.m in Sources */,
 				BF496E4124F4BA8400B85E6D /* OpenScribbleCommand.m in Sources */,
 				BFD5231624F788100066D58F /* TouchConsoleController.m in Sources */,
 				BF496E5224F4E2A600B85E6D /* NSMutableArray+Stack.m in Sources */,
@@ -748,6 +1005,8 @@
 				BF496E4424F4BB8700B85E6D /* SetStrokeSizeCommand.m in Sources */,
 				BF496E5C24F4E94C00B85E6D /* MarkEnumerator.m in Sources */,
 				BFD5231324F787D50066D58F /* ConsoleController.m in Sources */,
+				BFD5234624F8DFCE0066D58F /* UIImage+BaseFilter.m in Sources */,
+				BFD5237924F911A70066D58F /* CustomTextField.m in Sources */,
 				B50EDC5B23C76EF800F9468F /* Vertex.m in Sources */,
 				B50EDC1523C76AC800F9468F /* ViewController.m in Sources */,
 				BF496E6924F5011B00B85E6D /* ScribbleThumbnailCell.m in Sources */,
@@ -761,11 +1020,22 @@
 				BF496E2324F4AB2400B85E6D /* SaveScribbleCommand.m in Sources */,
 				B50EDC8523CB1CB400F9468F /* AcmView.m in Sources */,
 				B50EDC8223CB1AA800F9468F /* SierraBrandingFactory.m in Sources */,
+				BFD5235824F9045D0066D58F /* AttackHandler.m in Sources */,
+				BFD5236F24F90AC20066D58F /* Hamburger.m in Sources */,
 				BFD5232024F796D70066D58F /* CabDriver.m in Sources */,
 				B50EDC4B23C76B7C00F9468F /* ThumbnailViewController.m in Sources */,
+				BFD5233024F8DC1B0066D58F /* ImageFilter.m in Sources */,
+				BFD5236124F9067D0066D58F /* Avatar.m in Sources */,
+				BFD5237F24F912B40066D58F /* NumericInputValidator.m in Sources */,
 				B5DFED8824A4986600986393 /* Character.m in Sources */,
+				BFD5233C24F8DF780066D58F /* DecoratorView.m in Sources */,
+				BFD5236C24F90A9D0066D58F /* ReubenSandwich.m in Sources */,
+				BFD5235B24F904C50066D58F /* MetalArmor.m in Sources */,
 				B50EDC8823CB1CCE00F9468F /* AcmMainButton.m in Sources */,
+				BFD5233924F8DF290066D58F /* DecoratorViewController.m in Sources */,
+				BFD5233624F8DDC20066D58F /* ImageShadowFilter.m in Sources */,
 				B50EDC9123CB1D2E00F9468F /* SierraMainButton.m in Sources */,
+				BFD5237224F90AE90066D58F /* Hotdog.m in Sources */,
 				B50EDC7623CB10DC00F9468F /* ClothCanvasViewGenerator.m in Sources */,
 				B50EDC9423CB1D5E00F9468F /* SierraToolbar.m in Sources */,
 				BF496E3E24F4B9CD00B85E6D /* DeleteScribbleCommand.m in Sources */,
@@ -775,8 +1045,11 @@
 				B50EDC7023CB0FD000F9468F /* CanvasViewGenerator.m in Sources */,
 				BFD5231C24F7895B0066D58F /* GameGearEmulator.m in Sources */,
 				BF496E3524F4B67800B85E6D /* ScribbleThumbnailView.m in Sources */,
+				BFD5235124F903B10066D58F /* MagicFireAttack.m in Sources */,
 				B50EDC7323CB108200F9468F /* PaperCanvasViewGenerator.m in Sources */,
+				BFD5234324F8DFC60066D58F /* UIImage+Transform.m in Sources */,
 				B5DFED9F24A5B42500986393 /* SetStrokeColorCommand.m in Sources */,
+				BFD5236924F90A3E0066D58F /* AnySandwich.m in Sources */,
 				BF496E2A24F4B20B00B85E6D /* Scribble.m in Sources */,
 				BF496E5624F4E33B00B85E6D /* UIView+UIImage.m in Sources */,
 				B50EDC4E23C76C3500F9468F /* CoordinatingController.m in Sources */,
@@ -785,6 +1058,7 @@
 				B5DFED9824A5A0B900986393 /* Singleton.m in Sources */,
 				B50EDC1223C76AC800F9468F /* AppDelegate.m in Sources */,
 				B50EDC4823C76B6100F9468F /* PaletteViewController.m in Sources */,
+				BFD5234B24F9038E0066D58F /* Attack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

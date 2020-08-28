@@ -30,13 +30,13 @@
 
 - (CGPoint) location
 {
-  // return the location of the first child
+  // 返回第一个子节点的位置
   if ([children_ count] > 0)
   {
     return [[children_ objectAtIndex:0] location];
   }
   
-  // otherwise returns the origin
+  // 否则返回原点
   return CGPointZero;
 }
 
@@ -47,17 +47,14 @@
 
 - (void) removeMark:(id <Mark>) mark
 {
-  // if mark is at this level then
-  // remove it and return
-  // otherwise, let every child
-  // search for it
+  //如果mark再这一层,将其移出并返回
   if ([children_ containsObject:mark])
   {
     [children_ removeObject:mark];
   }
   else
   {
-      ///让数组中的每个对象调用sel
+      ///让数组中的每个对象调用移出
     [children_ makeObjectsPerformSelector:@selector(removeMark:)
                                withObject:mark];
   }
