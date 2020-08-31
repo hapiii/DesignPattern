@@ -104,6 +104,10 @@
 		BFD5239124F9178E0066D58F /* jasmine.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD5238B24F9178E0066D58F /* jasmine.png */; };
 		BFD5239224F9178E0066D58F /* hollyhock.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD5238C24F9178E0066D58F /* hollyhock.png */; };
 		BFD5239324F9178E0066D58F /* anemone.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD5238D24F9178E0066D58F /* anemone.png */; };
+		BFD5239624FC92920066D58F /* FlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5239524FC92920066D58F /* FlowerView.m */; };
+		BFD5239924FC92D60066D58F /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5239824FC92D60066D58F /* FlyweightView.m */; };
+		BFD5239C24FC93440066D58F /* FlyweightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5239B24FC93440066D58F /* FlyweightViewController.m */; };
+		BFD5239F24FCD1570066D58F /* ExtrinsicFlowerState.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD5239E24FCD1570066D58F /* ExtrinsicFlowerState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -320,6 +324,14 @@
 		BFD5238B24F9178E0066D58F /* jasmine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jasmine.png; sourceTree = "<group>"; };
 		BFD5238C24F9178E0066D58F /* hollyhock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hollyhock.png; sourceTree = "<group>"; };
 		BFD5238D24F9178E0066D58F /* anemone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anemone.png; sourceTree = "<group>"; };
+		BFD5239424FC92920066D58F /* FlowerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerView.h; sourceTree = "<group>"; };
+		BFD5239524FC92920066D58F /* FlowerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerView.m; sourceTree = "<group>"; };
+		BFD5239724FC92D60066D58F /* FlyweightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightView.h; sourceTree = "<group>"; };
+		BFD5239824FC92D60066D58F /* FlyweightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightView.m; sourceTree = "<group>"; };
+		BFD5239A24FC93440066D58F /* FlyweightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightViewController.h; sourceTree = "<group>"; };
+		BFD5239B24FC93440066D58F /* FlyweightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightViewController.m; sourceTree = "<group>"; };
+		BFD5239D24FC93720066D58F /* ExtrinsicFlowerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtrinsicFlowerState.h; sourceTree = "<group>"; };
+		BFD5239E24FCD1570066D58F /* ExtrinsicFlowerState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtrinsicFlowerState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -820,6 +832,14 @@
 				BFD5238724F9178E0066D58F /* images */,
 				BFD5238424F9174D0066D58F /* FlowerFactory.h */,
 				BFD5238524F9174D0066D58F /* FlowerFactory.m */,
+				BFD5239424FC92920066D58F /* FlowerView.h */,
+				BFD5239524FC92920066D58F /* FlowerView.m */,
+				BFD5239724FC92D60066D58F /* FlyweightView.h */,
+				BFD5239824FC92D60066D58F /* FlyweightView.m */,
+				BFD5239A24FC93440066D58F /* FlyweightViewController.h */,
+				BFD5239B24FC93440066D58F /* FlyweightViewController.m */,
+				BFD5239D24FC93720066D58F /* ExtrinsicFlowerState.h */,
+				BFD5239E24FCD1570066D58F /* ExtrinsicFlowerState.m */,
 			);
 			path = Flyweight;
 			sourceTree = "<group>";
@@ -1008,11 +1028,13 @@
 				BFD5234624F8DFCE0066D58F /* UIImage+BaseFilter.m in Sources */,
 				BFD5237924F911A70066D58F /* CustomTextField.m in Sources */,
 				B50EDC5B23C76EF800F9468F /* Vertex.m in Sources */,
+				BFD5239624FC92920066D58F /* FlowerView.m in Sources */,
 				B50EDC1523C76AC800F9468F /* ViewController.m in Sources */,
 				BF496E6924F5011B00B85E6D /* ScribbleThumbnailCell.m in Sources */,
 				B5DFED9C24A5B3CD00986393 /* Command.m in Sources */,
 				B50EDC5E23C9D24500F9468F /* Dot.m in Sources */,
 				B5DFED8E24A5955600986393 /* StandardCharacterBuilder.m in Sources */,
+				BFD5239C24FC93440066D58F /* FlyweightViewController.m in Sources */,
 				B50EDC2023C76ACB00F9468F /* main.m in Sources */,
 				B50EDC6D23CB0F7400F9468F /* ClothCanvasView.m in Sources */,
 				BFD5231924F789400066D58F /* GameBoyEmulator.m in Sources */,
@@ -1020,6 +1042,7 @@
 				BF496E2324F4AB2400B85E6D /* SaveScribbleCommand.m in Sources */,
 				B50EDC8523CB1CB400F9468F /* AcmView.m in Sources */,
 				B50EDC8223CB1AA800F9468F /* SierraBrandingFactory.m in Sources */,
+				BFD5239924FC92D60066D58F /* FlyweightView.m in Sources */,
 				BFD5235824F9045D0066D58F /* AttackHandler.m in Sources */,
 				BFD5236F24F90AC20066D58F /* Hamburger.m in Sources */,
 				BFD5232024F796D70066D58F /* CabDriver.m in Sources */,
@@ -1052,6 +1075,7 @@
 				BFD5236924F90A3E0066D58F /* AnySandwich.m in Sources */,
 				BF496E2A24F4B20B00B85E6D /* Scribble.m in Sources */,
 				BF496E5624F4E33B00B85E6D /* UIView+UIImage.m in Sources */,
+				BFD5239F24FCD1570066D58F /* ExtrinsicFlowerState.m in Sources */,
 				B50EDC4E23C76C3500F9468F /* CoordinatingController.m in Sources */,
 				BF496E6324F4EB2D00B85E6D /* MarkRenderer.m in Sources */,
 				BF496E4E24F4E25400B85E6D /* CommandSlider.m in Sources */,

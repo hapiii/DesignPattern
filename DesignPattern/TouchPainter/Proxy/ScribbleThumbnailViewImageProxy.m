@@ -60,10 +60,7 @@
 // it will redraw itself with the real one.
 - (void)drawRect:(CGRect)rect
 {
-  // if is no real image available
-  // from realImageView_,
-  // then just draw a blank frame
-  // as a placeholder image
+  // 绘制占位图
   if (realImage_ == nil)
   {
     // Drawing code
@@ -84,7 +81,7 @@
     // launch a thread to load the real
     // payload if it hasn't done yet
     if (!loadingThreadHasLaunched_)
-    {
+    {//创建一个线程在子线程执行
       [self performSelectorInBackground:@selector(forwardImageLoadingThread)
                              withObject:nil];
       loadingThreadHasLaunched_ = YES;
@@ -113,10 +110,10 @@
 
 - (void) forwardImageLoadingThread
 {
-  
+  ///加载图片
   [self image];
   
-  // redraw itself with the newly loaded image
+  // 触发drawRect展示图片
   [self performSelectorInBackground:@selector(setNeedsDisplay) withObject:nil];
   
  

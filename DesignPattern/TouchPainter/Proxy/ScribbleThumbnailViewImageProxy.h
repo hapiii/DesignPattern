@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ScribbleThumbnailViewImageProxy : ScribbleThumbnailView{
+@interface ScribbleThumbnailViewImageProxy : ScribbleThumbnailView {
   @private
   Scribble *scribble_;
   Command *touchCommand_;

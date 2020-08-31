@@ -8,6 +8,7 @@
 
 #import "FlowerFactory.h"
 #import <UIKit/UIKit.h>
+#import "FlowerView.h"
 
 @implementation FlowerFactory
 
@@ -29,7 +30,7 @@
   // is not available then
   // create a new one and
   // add it to the pool
-  if (flowerView == nil)
+  if (!flowerView)
   {
     UIImage *flowerImage;
     
@@ -57,12 +58,13 @@
         break;
     }
     
-    flowerView = [[[FlowerView alloc]
-                   initWithImage:flowerImage] autorelease];
+    flowerView = [[FlowerView alloc]
+                   initWithImage:flowerImage];
     [flowerPool_ setObject:flowerView
                     forKey:[NSNumber numberWithInt:type]];
   }
   
   return flowerView;
 }
+
 @end

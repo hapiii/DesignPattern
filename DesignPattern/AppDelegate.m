@@ -18,10 +18,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self.window setBackgroundColor:[UIColor whiteColor]];
-    CoordinatingController *coordinatingController = [CoordinatingController sharedInstance];
-    self.window.rootViewController = [coordinatingController activeViewController];
-    [self.window makeKeyAndVisible];
+//    [self.window setBackgroundColor:[UIColor whiteColor]];
+//    CoordinatingController *coordinatingController = [CoordinatingController sharedInstance];
+//    self.window.rootViewController = [coordinatingController activeViewController];
+//    [self.window makeKeyAndVisible];
    
     return YES;
 }

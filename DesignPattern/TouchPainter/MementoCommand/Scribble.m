@@ -89,10 +89,7 @@
     }
     else
     {
-      // if the memento contains only
-      // incremental mark, then we need to
-      // create a parent Stroke object to
-      // hold it
+      //如果备忘录中只包含一个增量的mark,那就需要创建容纳它的父节点
       parentMark_ = [[Stroke alloc] init];
       [self attachStateFromMemento:aMemento];
     }
@@ -104,8 +101,7 @@
 
 - (void) attachStateFromMemento:(ScribbleMemento *)memento
 {
-  // attach any mark from a memento object
-  // to the main parent
+  //把来自备忘录的对象的mark添加到根节点
   [self addMark:[memento mark] shouldAddToPreviousMark:NO];
 }
 
@@ -113,10 +109,7 @@
 - (ScribbleMemento *) scribbleMementoWithCompleteSnapshot:(BOOL)hasCompleteSnapshot
 {
   id <Mark> mementoMark = incrementalMark_;
-  
-  // if the resulting memento asks
-  // for a complete snapshot, then
-  // set it with parentMark_
+  //如果要求返回完整的快照,就把它设为parentMark_
   if (hasCompleteSnapshot)
   {
     mementoMark = parentMark_;

@@ -27,7 +27,7 @@
 
 @implementation ScribbleManager
 
-
+///scribble 转 ScribbleMemento,然后保存
 - (void) saveScribble:(Scribble *)scribble thumbnail:(UIImage *)image
 {
   // get a new index for the new scribble data and its thumbnail
@@ -42,6 +42,7 @@
   NSData *mementoData = [scribbleMemento data];
   NSString *mementoPath = [[self scribbleDataPath]
                            stringByAppendingPathComponent:scribbleDataName];
+    ///保存备忘录
   [mementoData writeToFile:mementoPath atomically:YES];
   
   ///把缩略图直接保存到文件系统
@@ -51,14 +52,14 @@
   [imageData writeToFile:imagePath atomically:YES];
 }
 
-
+///总个数
 - (NSInteger) numberOfScribbles
 {
   NSArray *scribbleDataPathsArray = [self scribbleDataPaths];
   return [scribbleDataPathsArray count];
 }
 
-
+///获取指定位置数据
 - (Scribble *) scribbleAtIndex:(NSInteger)index
 {
   Scribble *loadedScribble = nil;
@@ -119,7 +120,7 @@
 
 #pragma mark -
 #pragma mark Private Methods
-
+///模型data文件地址
 - (NSString *) scribbleDataPath
 {
   // lazy create the scribble data directory
@@ -136,7 +137,7 @@
   return kScribbleDataPath;
 }
 
-
+///缩略图外层文件地址
 - (NSString *) scribbleThumbnailPath
 {
   // lazy create the scribble thumbnail directory
@@ -153,7 +154,7 @@
   return kScribbleThumbnailPath;
 }
 
-
+///data数据
 - (NSArray *) scribbleDataPaths
 {
   NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -164,7 +165,7 @@
   return scribbleDataPathsArray;
 }
 
-
+///缩略图数据
 - (NSArray*) scribbleThumbnailPaths
 {
   NSFileManager *fileManager = [NSFileManager defaultManager];

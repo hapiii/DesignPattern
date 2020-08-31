@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CoordinatingController.h"
+#import "FlyweightViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +20,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+- (IBAction)paintAction:(UIButton *)sender {
+    CoordinatingController *coordinatingController = [CoordinatingController sharedInstance];
+    UIViewController *vc = [coordinatingController activeViewController];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+       [self presentViewController:vc animated:YES completion:nil];
+}
 
+- (IBAction)flyWeight:(UIButton *)sender {
+    FlyweightViewController *vc = [[FlyweightViewController alloc] init];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end
