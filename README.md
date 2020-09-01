@@ -1,4 +1,6 @@
 #  
+
+
 ###  paint效果
 ![image](https://github.com/hapiii/DesignPattern/blob/master/imgs/add.gif)
 ###  3.原型模式 - Prototype
@@ -35,15 +37,16 @@ dispatch_once(&onceToken, ^{
 
 ### 8.适配器模式
 将一个类的接口转换成客户希望的另外一种接口.适配器使得原本由于接口不兼容而不能一起工作的类可以一起工作
-接口适配
+代理,block
 
 ### 9.桥接模式(bridge)
 将抽象部分与它的实现部分分离,使他们可以独立地变化
 
-### 10.外观模式
+### 10.外观模式(Taxicab)
 为系统的一组接口提供一个统一的接口. 外观定义一个高层接口,让子系统更易于使用.
+对一系列接口的二次封装,比如Controller里将 网络请求,显示progress,成功,失败UI展示 统一封装在一个方法里
 
-### 11.中介者模式
+### 11.中介者模式(Mediator)
 用一个对象来封装一系列对象的交互方式.中介使各对象不需要显式地相互引用.从而使其耦合松散. 而且可以独立地改变它们之间的交互.
 (比如Controller )
 
@@ -95,7 +98,6 @@ NSInvocation , NSUndoManager
 
 ### 22.代理模式(Proxy)
 对其他对象提供一种代理以控制对这个对象的访问
-tableview 通过代理控制cell
 远程代理:虚拟代理懒加载图片
 NSproxy
 

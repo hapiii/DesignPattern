@@ -13,7 +13,7 @@
 
 - (void) loadInstructionsForCommand:(ConsoleCommand) command
 {
-  // should throw an exception
+  
 }
 
 - (void) executeInstructions

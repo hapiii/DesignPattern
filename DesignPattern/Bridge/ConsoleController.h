@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
   ConsoleEmulator *emulator_;
 }
 ///唯一的桥
-@property (nonatomic, retain) ConsoleEmulator *emulator;
+@property (nonatomic, strong) ConsoleEmulator *emulator;
 
 - (void) setCommand:(ConsoleCommand) command;
 
