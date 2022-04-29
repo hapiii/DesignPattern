@@ -29,12 +29,7 @@ typedef void (^PostColorUpdateProvider)(UIColor *color);
 @end
 
 @interface SetStrokeColorCommand : Command
-{
-  @private
 
-  RGBValuesProvider RGBValuesProvider_;
-  PostColorUpdateProvider postColorUpdateProvider_;
-}
 
 @property (nonatomic, weak) id <SetStrokeColorCommandDelegate> delegate;
 @property (nonatomic, copy) RGBValuesProvider RGBValuesProvider;

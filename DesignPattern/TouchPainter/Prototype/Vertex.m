@@ -13,11 +13,11 @@
 @synthesize location=location_;
 @dynamic color, size;
 
-- (id) initWithLocation:(CGPoint) aLocation
+- (instancetype)initWithLoc:(CGPoint)location
 {
   if (self = [super init])
   {
-    [self setLocation:aLocation];
+    [self setLocation:location];
   }
   
   return self;
@@ -49,7 +49,7 @@
 // it needs to be implemented for memento
 - (id)copyWithZone:(NSZone *)zone
 {
-  Vertex *vertexCopy = [[[self class] allocWithZone:zone] initWithLocation:location_];
+  Vertex *vertexCopy = [[self.class allocWithZone:zone] initWithLoc:location_];
   
   return vertexCopy;
 }

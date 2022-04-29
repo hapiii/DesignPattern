@@ -49,7 +49,7 @@
   [super viewDidLoad];
   [self configUI];
   
-  PaperCanvasViewGenerator *defaultGenerator = [[PaperCanvasViewGenerator alloc] init];
+    CanvasViewGenerator *defaultGenerator = [[CanvasViewGenerator alloc] init];
   [self loadCanvasViewWithGenerator:defaultGenerator];
   
   // initialize a Scribble model
@@ -173,7 +173,7 @@
 //把当前触摸点作为顶点儿添加到临时线条
   CGPoint thisPoint = [[touches anyObject] locationInView:canvasView_];
   Vertex *vertex = [[Vertex alloc]
-                     initWithLocation:thisPoint];
+                    initWithLoc:thisPoint];
   
   // we don't need to undo every vertex
   // so we are keeping this
@@ -189,7 +189,7 @@
   if (CGPointEqualToPoint(lastPoint, thisPoint))
   {
     Dot *singleDot = [[Dot alloc]
-                       initWithLocation:thisPoint];
+                      initWithLoc:thisPoint];
                       
     [singleDot setColor:strokeColor_];
     [singleDot setSize:strokeSize_];

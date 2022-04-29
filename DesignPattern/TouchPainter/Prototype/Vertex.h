@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSUInteger count;
 @property (nonatomic, readonly) id <Mark> lastChild;
 
-- (id) initWithLocation:(CGPoint) location;
+- (instancetype)initWithLoc:(CGPoint)location;
 
 - (void) addMark:(id <Mark>) mark;
 - (void) removeMark:(id <Mark>) mark;

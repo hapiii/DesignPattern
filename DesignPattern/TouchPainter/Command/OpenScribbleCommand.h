@@ -13,10 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OpenScribbleCommand : Command
-{
-  @private
-  id <ScribbleSource> scribbleSource_;
-}
+
 
 @property (nonatomic, retain) id <ScribbleSource> scribbleSource;
 

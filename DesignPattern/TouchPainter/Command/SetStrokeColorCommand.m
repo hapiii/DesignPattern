@@ -12,11 +12,6 @@
 
 @implementation SetStrokeColorCommand
 
-//@synthesize delegate=delegate_;
-@synthesize postColorUpdateProvider=postColorUpdateProvider_;
-@synthesize RGBValuesProvider=RGBValuesProvider_;
-
-
 - (void) execute
 {
   CGFloat redValue = 0.0;
@@ -31,8 +26,8 @@
                                                      blue:&blueValue];
   
   // Block approach:
-  if (RGBValuesProvider_ != nil) {
-    RGBValuesProvider_(&redValue, &greenValue, &blueValue);
+  if (_RGBValuesProvider != nil) {
+      _RGBValuesProvider(&redValue, &greenValue, &blueValue);
   }
   
   // Create a color object based on the RGB values
@@ -52,9 +47,9 @@
   [_delegate command:self didFinishColorUpdateWithColor:color];
   
   // Block approach:
-  if (postColorUpdateProvider_ != nil)
+  if (_postColorUpdateProvider != nil)
   {
-    postColorUpdateProvider_(color);
+      _postColorUpdateProvider(color);
   }
 }
 
